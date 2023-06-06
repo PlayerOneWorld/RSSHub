@@ -65,6 +65,14 @@
     "/0818tuan/:listId?": [
         "TonyRL"
     ],
+    "/141jav/:type?/:keyword?": [
+        "cgkings",
+        "nczitzk"
+    ],
+    "/141ppv/:type?/:keyword?": [
+        "cgkings",
+        "nczitzk"
+    ],
     "/18comic/album/:id": [
         "nczitzk"
     ],
@@ -275,6 +283,12 @@
     ],
     "/aeaweb/:id": [
         "nczitzk"
+    ],
+    "/aeon/category/:category": [
+        "emdoe"
+    ],
+    "/aeon/:type": [
+        "emdoe"
     ],
     "/agefans/detail/:id": [
         "s2marine"
@@ -810,6 +824,12 @@
     ],
     "/bluestacks/release/5": [
         "TonyRL"
+    ],
+    "/bmkg/earthquake": [
+        "Shinanory"
+    ],
+    "/bmkg/news": [
+        "Shinanory"
     ],
     "/bnu/bs/:category?": [
         "nczitzk"
@@ -1388,6 +1408,9 @@
         "nczitzk",
         "TonyRL"
     ],
+    "/devolverdigital/blog": [
+        "XXY233"
+    ],
     "/dgjyw/:category?": [
         "nczitzk"
     ],
@@ -1396,6 +1419,9 @@
     ],
     "/dhu/xxgk/news": [
         "KiraKiseki"
+    ],
+    "/dhu/yjs/zs/:type?": [
+        "fox2049"
     ],
     "/diandong/news/:cate?": [
         "Fatpandac"
@@ -1668,6 +1694,9 @@
     "/eastmoney/ttjj/user/:uid": [
         "zidekuls"
     ],
+    "/eastmoney/report/:category": [
+        "syzq"
+    ],
     "/eastmoney/search/:keyword": [
         "drgnchan"
     ],
@@ -1821,6 +1850,21 @@
     "/focustaiwan/:category?": [
         "nczitzk"
     ],
+    "/followin/kol/:kolId/:lang?": [
+        "TonyRL"
+    ],
+    "/followin/news/:lang?": [
+        "TonyRL"
+    ],
+    "/followin/tag/:tagId/:lang?": [
+        "TonyRL"
+    ],
+    "/followin/topic/:topicId/:lang?": [
+        "TonyRL"
+    ],
+    "/followin/:categoryId?/:lang?": [
+        "TonyRL"
+    ],
     "/foresightnews/": [
         "nczitzk"
     ],
@@ -1873,6 +1917,10 @@
     ],
     "/furstar/archive/:lang?": [
         "NeverBehave"
+    ],
+    "/futunn/main": [
+        "Wsine",
+        "nczitzk"
     ],
     "/fx-markets/fx-markets/:channel": [
         "mikkkee"
@@ -3779,6 +3827,12 @@
     "/nogizaka46/blog": [
         "Kasper4649"
     ],
+    "/notateslaapp/ota": [
+        "mrbruce516"
+    ],
+    "/notefolio/search/:category?/:order?/:time?/:query?": [
+        "BianTan"
+    ],
     "/notion/database/:databaseId": [
         "curly210102"
     ],
@@ -4608,6 +4662,9 @@
         "junfengP",
         "nczitzk"
     ],
+    "/sehuatang/user/:uid": [
+        "JamYiz"
+    ],
     "/sehuatang/:subforumid?/:type?": [
         "qiwihui",
         "junfengP",
@@ -5431,6 +5488,12 @@
     "/usts/juch/:type?": [
         "Fatpandac"
     ],
+    "/utgd/:category?": [
+        "nczitzk"
+    ],
+    "/utgd/topic/:topic?": [
+        "nczitzk"
+    ],
     "/uw/gix/news/:category": [
         "dykderrick"
     ],
@@ -5637,6 +5700,9 @@
     ],
     "/wikinews/latest": [
         "KotoriK"
+    ],
+    "/winstall/:appId": [
+        "TonyRL"
     ],
     "/wise/pair/:source/:target": [
         "HenryQW"
@@ -6563,7 +6629,6 @@
     "/maxnews/dota2": [],
     "/ningmeng/song": [],
     "/zzz/:category?/:language?": [],
-    "/aeon/:cid": [],
     "/algocasts": [],
     "/aqicn/:city/:pollution?": [],
     "/maoyan/hot": [],
@@ -6935,7 +7000,6 @@
     "/egameqq/room/:id": [],
     "/gov/chinatax/latest": [],
     "/lizhi/user/:id": [],
-    "/futunn/highlights": [],
     "/boston/:tag?": [],
     "/changku": [],
     "/changku/cate/:postid": [],
@@ -6976,8 +7040,6 @@
     "/jlu/oa": [],
     "/hfut/tzgg": [],
     "/onejav/:type/:key?": [],
-    "/141jav/:type/:key?": [],
-    "/141ppv/:type/:key?": [],
     "/curiouscat/user/:id": [],
     "/newsmth/account/:id": [],
     "/newsmth/section/:section": [],
@@ -7038,7 +7100,6 @@
     "/cktest/policy": [],
     "/mamibuy/:caty?/:age?/:sort?": [],
     "/mercari/:type/:id": [],
-    "/notefolio/:caty?/:order?/:time?/:query?": [],
     "/weforum/report/:lang?/:year?/:platform?": [],
     "/nobelprize/:caty?": [],
     "/gov/taiwan/mnd": [],
@@ -7120,7 +7181,6 @@
     "/gvm/index/:category?": [],
     "/chuapp/index/:category?": [],
     "/deloitte/industries/:category?": [],
-    "/tesla": [],
     "/fudan/cce": [],
     "/lowendtalk/discussion/:id?": [],
     "/proletar/:type?/:id?": [],

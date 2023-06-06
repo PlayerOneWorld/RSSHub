@@ -233,6 +233,54 @@
       }
     ]
   },
+  "141jav.com": {
+    "_name": "141JAV",
+    ".": [
+      {
+        "title": "今日种子",
+        "docs": "https://docs.rsshub.app/multimedia.html#_141jav",
+        "source": "/"
+      },
+      {
+        "title": "今日演员",
+        "docs": "https://docs.rsshub.app/multimedia.html#_141jav",
+        "source": "/"
+      },
+      {
+        "title": "页面种子",
+        "docs": "https://docs.rsshub.app/multimedia.html#_141jav",
+        "source": [
+          "/:type",
+          "/:type/:key",
+          "/:type/:key/:morekey"
+        ]
+      }
+    ]
+  },
+  "141ppv.com": {
+    "_name": "141JAV",
+    ".": [
+      {
+        "title": "今日种子",
+        "docs": "https://docs.rsshub.app/multimedia.html#_141ppv",
+        "source": "/"
+      },
+      {
+        "title": "今日演员",
+        "docs": "https://docs.rsshub.app/multimedia.html#_141ppv",
+        "source": "/"
+      },
+      {
+        "title": "页面种子",
+        "docs": "https://docs.rsshub.app/multimedia.html#_141ppv",
+        "source": [
+          "/:type",
+          "/:type/:key",
+          "/:type/:key/:morekey"
+        ]
+      }
+    ]
+  },
   "18comic.org": {
     "_name": "禁漫天堂",
     ".": [
@@ -1361,6 +1409,27 @@
           "/"
         ],
         "target": "/aeaweb/:id"
+      }
+    ]
+  },
+  "aeon.co": {
+    "_name": "AEON",
+    "aeon": [
+      {
+        "title": "Types (Essays, Videos, or Audio)",
+        "docs": "https://docs.rsshub.app/new-media.html##aeon",
+        "source": [
+          "/:type"
+        ],
+        "target": "/aeon/:type"
+      },
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/new-media.html##aeon",
+        "source": [
+          "/:category"
+        ],
+        "target": "/aeon/category/:category"
       }
     ]
   },
@@ -3332,6 +3401,29 @@
           "/"
         ],
         "target": "/bluestacks/release/5"
+      }
+    ]
+  },
+  "bmkg.go.id": {
+    "_name": "BMKG 印尼气象气候和地球物理局",
+    ".": [
+      {
+        "title": "最近的地震",
+        "docs": "https://docs.rsshub.app/new-media.html#BMKG-yin-ni-qi-xiang-qi-hou-he-di-qiu-wu-li-ju",
+        "source": [
+          "/",
+          "/gempabumi-terkini.html"
+        ],
+        "target": "/bmkg/earthquake"
+      },
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/new-media.html#BMKG-yin-ni-qi-xiang-qi-hou-he-di-qiu-wu-li-ju",
+        "source": [
+          "/",
+          "/berita"
+        ],
+        "target": "/bmkg/news"
       }
     ]
   },
@@ -5547,6 +5639,17 @@
       }
     ]
   },
+  "devolverdigital.com": {
+    "_name": "DevolverDigital",
+    ".": [
+      {
+        "title": "官方博客",
+        "docs": "https://docs.rsshub.app/blog.html#devolverdigital",
+        "source": "/blog",
+        "target": "/devolverdigital/blog"
+      }
+    ]
+  },
   "dgjyw.com": {
     "_name": "东莞教研网",
     ".": [
@@ -5570,6 +5673,12 @@
     "xxgk": [
       {
         "title": "最新信息公开",
+        "docs": "https://docs.rsshub.app/university.html#dong-hua-da-xue"
+      }
+    ],
+    "yjs": [
+      {
+        "title": "研究生信息",
         "docs": "https://docs.rsshub.app/university.html#dong-hua-da-xue"
       }
     ]
@@ -6485,6 +6594,16 @@
   },
   "eastmoney.com": {
     "_name": "东方财富",
+    "data": [
+      {
+        "title": "研究报告",
+        "docs": "https://docs.rsshub.app/finance.html#dong-fang-cai-fu",
+        "source": [
+          "/report/:category"
+        ],
+        "target": "/eastmoney/report/:category"
+      }
+    ],
     "fundbarmob": [
       {
         "title": "天天基金用户动态",
@@ -7393,6 +7512,54 @@
       }
     ]
   },
+  "followin.io": {
+    "_name": "Followin",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang"
+        ]
+      },
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang?/news",
+          "/news"
+        ],
+        "target": "/followin/news/:lang?"
+      },
+      {
+        "title": "KOL",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang/kol/:kolId",
+          "/kol/:kolId"
+        ],
+        "target": "/followin/kol/:kolId/:lang?"
+      },
+      {
+        "title": "话题",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang/topic/:topicId",
+          "/topic/:topicId"
+        ],
+        "target": "/followin/topic/:topicId/:lang?"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/finance.html#followin",
+        "source": [
+          "/:lang/tag/:tagId",
+          "/tag/:tagId"
+        ],
+        "target": "/followin/tag/:tagId/:lang?"
+      }
+    ]
+  },
   "foresightnews.pro": {
     "_name": "Foresight News",
     ".": [
@@ -7566,6 +7733,20 @@
           "/"
         ],
         "target": "/secnews/index"
+      }
+    ]
+  },
+  "futunn.com": {
+    "_name": "富途牛牛",
+    "news": [
+      {
+        "title": "要闻",
+        "docs": "https://docs.rsshub.app/finance.html#fu-tu-niu-niu",
+        "source": [
+          "/main",
+          "/"
+        ],
+        "target": "/futunn/main"
       }
     ]
   },
@@ -16076,6 +16257,34 @@
       }
     ]
   },
+  "notateslaapp.com": {
+    "_name": "Not a Tesla App",
+    ".": [
+      {
+        "title": "特斯拉系统更新",
+        "docs": "https://docs.rsshub.app/program-update.html#not-a-tesla-app",
+        "source": [
+          "/software-updates/history",
+          "/software-updates",
+          "/"
+        ],
+        "target": "/notateslaapp/ota"
+      }
+    ]
+  },
+  "notefolio.net": {
+    "_name": "Notefolio",
+    ".": [
+      {
+        "title": "Search",
+        "docs": "https://docs.rsshub.app/design.html#notefolio",
+        "source": [
+          "/search"
+        ],
+        "target": "/notefolio/search/:category?/:order?/:time?/:query?"
+      }
+    ]
+  },
   "notion.so": {
     "_name": "Notion",
     ".": [
@@ -18907,6 +19116,56 @@
   },
   "shiep.edu.cn": {
     "_name": "上海电力大学",
+    "bwc": [
+      {
+        "title": "武装部保卫处",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/bwc/:id"
+      }
+    ],
+    "career": [
+      {
+        "title": "本科就业信息网",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/news/index/tag/:id"
+        ],
+        "target": "/shiep/career/:id"
+      }
+    ],
+    "cyb": [
+      {
+        "title": "资产经营公司/产业办",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/cyb/:id"
+      }
+    ],
+    "dangban": [
+      {
+        "title": "党委办公室",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/dangban/:id"
+      }
+    ],
+    "djfwzxdcs": [
+      {
+        "title": "党建服务中心/党建督查室",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/djfwzxdcs/:id"
+      }
+    ],
     "dqxy": [
       {
         "title": "电气工程学院",
@@ -18917,9 +19176,19 @@
         "target": "/shiep/dqxy/:id"
       }
     ],
+    "dwllc": [
+      {
+        "title": "对外联络处",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/dwllc/:id"
+      }
+    ],
     "dxxy": [
       {
-        "title": "电子信息工程学院",
+        "title": "电子与信息工程学院",
         "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
         "source": [
           "/:id/list.htm"
@@ -18937,6 +19206,26 @@
         "target": "/shiep/energy/:id"
       }
     ],
+    "energy-saving": [
+      {
+        "title": "上海热交换系统节能工程技术研究中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/energy-saving/:id"
+      }
+    ],
+    "english": [
+      {
+        "title": "Shanghai University of Electric Power",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/english/:id"
+      }
+    ],
     "fao": [
       {
         "title": "国际交流与合作处（港澳台办公室）",
@@ -18947,14 +19236,64 @@
         "target": "/shiep/fao/:id"
       }
     ],
-    "gjjlxy": [
+    "fgw": [
       {
-        "title": "国际交流学院",
+        "title": "妇工委",
         "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
         "source": [
           "/:id/list.htm"
         ],
-        "target": "/shiep/gjjlxy/:id"
+        "target": "/shiep/fgw/:id"
+      }
+    ],
+    "fzghc": [
+      {
+        "title": "发展规划处",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/fzghc/:id"
+      }
+    ],
+    "gec": [
+      {
+        "title": "上海新能源人才技术教育交流中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/gec/:id"
+      }
+    ],
+    "gonghui": [
+      {
+        "title": "工会",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/gonghui/:id"
+      }
+    ],
+    "green-energy": [
+      {
+        "title": "上海绿色能源并网技术研究中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/green-energy/:id"
+      }
+    ],
+    "hhsyzx": [
+      {
+        "title": "能源化学实验教学中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/hhsyzx/:id"
       }
     ],
     "hhxy": [
@@ -18967,6 +19306,36 @@
         "target": "/shiep/hhxy/:id"
       }
     ],
+    "hqglc": [
+      {
+        "title": "后勤管理处（后勤服务中心）",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/hqglc/:id"
+      }
+    ],
+    "ieetc": [
+      {
+        "title": "创新创业工程训练中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/ieetc/:id"
+      }
+    ],
+    "jgdw": [
+      {
+        "title": "机关党委",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/jgdw/:id"
+      }
+    ],
     "jgxy": [
       {
         "title": "经济与管理学院",
@@ -18977,14 +19346,44 @@
         "target": "/shiep/jgxy/:id"
       }
     ],
+    "jijian": [
+      {
+        "title": "纪委（监察专员办公室）",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/jijian/:id"
+      }
+    ],
+    "jjc": [
+      {
+        "title": "基建处",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/jjc/:id"
+      }
+    ],
     "jjxy": [
       {
-        "title": "继续教育学院",
+        "title": "继续教育学院（国际教育学院）",
         "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
         "source": [
           "/:id/list.htm"
         ],
         "target": "/shiep/jjxy/:id"
+      }
+    ],
+    "jsjxfzzx": [
+      {
+        "title": "教师教学发展中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/jsjxfzzx/:id"
       }
     ],
     "jsjxy": [
@@ -18997,6 +19396,16 @@
         "target": "/shiep/jsjxy/:id"
       }
     ],
+    "jszyzx": [
+      {
+        "title": "技术转移中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/jszyzx/:id"
+      }
+    ],
     "jwc": [
       {
         "title": "教务处",
@@ -19007,14 +19416,64 @@
         "target": "/shiep/jwc/:id"
       }
     ],
+    "kczx": [
+      {
+        "title": "能源电力科创中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/kczx/:id"
+      }
+    ],
     "kyc": [
       {
-        "title": "科研处",
+        "title": "科研处/融合办",
         "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
         "source": [
           "/:id/list.htm"
         ],
         "target": "/shiep/kyc/:id"
+      }
+    ],
+    "lgxq": [
+      {
+        "title": "临港新校区建设综合办公室",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/lgxq/:id"
+      }
+    ],
+    "library": [
+      {
+        "title": "图书馆",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/library/:id"
+      }
+    ],
+    "metc": [
+      {
+        "title": "现代教育技术中心/信息办",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/metc/:id"
+      }
+    ],
+    "mpep": [
+      {
+        "title": "上海市电力材料防护与新材料重点实验室",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/mpep/:id"
       }
     ],
     "news": [
@@ -19027,14 +19486,44 @@
         "target": "/shiep/news/:id"
       }
     ],
+    "office": [
+      {
+        "title": "校长办公室（档案馆）",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/office/:id"
+      }
+    ],
     "rsc": [
       {
-        "title": "党委教师工作部、人事处",
+        "title": "党委教师工作部/人事处",
         "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
         "source": [
           "/:id/list.htm"
         ],
         "target": "/shiep/rsc/:id"
+      }
+    ],
+    "rwysxy": [
+      {
+        "title": "人文艺术学院",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/rwysxy/:id"
+      }
+    ],
+    "sjc": [
+      {
+        "title": "审计处",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/sjc/:id"
       }
     ],
     "skb": [
@@ -19057,6 +19546,36 @@
         "target": "/shiep/slxy/:id"
       }
     ],
+    "sysyzcglc": [
+      {
+        "title": "实验室与资产管理处",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/sysyzcglc/:id"
+      }
+    ],
+    "tgb": [
+      {
+        "title": "离退休党委/退管办",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/tgb/:id"
+      }
+    ],
+    "tw": [
+      {
+        "title": "团委",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/tw/:id"
+      }
+    ],
     "tyb": [
       {
         "title": "体育学院",
@@ -19067,6 +19586,26 @@
         "target": "/shiep/tyb/:id"
       }
     ],
+    "tzb": [
+      {
+        "title": "统战部",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/tzb/:id"
+      }
+    ],
+    "wenming": [
+      {
+        "title": "文明办",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/wenming/:id"
+      }
+    ],
     "wgyxy": [
       {
         "title": "外国语学院",
@@ -19075,6 +19614,36 @@
           "/:id/list.htm"
         ],
         "target": "/shiep/wgyxy/:id"
+      }
+    ],
+    "xcb": [
+      {
+        "title": "宣传部（文明办、融媒体中心）",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/xcb/:id"
+      }
+    ],
+    "xsc": [
+      {
+        "title": "学生处",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/xsc/:id"
+      }
+    ],
+    "xunchaban": [
+      {
+        "title": "巡查办",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/xunchaban/:id"
       }
     ],
     "xxgk": [
@@ -19097,16 +19666,6 @@
         "target": "/shiep/yjsc/:id"
       }
     ],
-    "yjzx": [
-      {
-        "title": "人文艺术学院",
-        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
-        "source": [
-          "/:id/list.htm"
-        ],
-        "target": "/shiep/yjzx/:id"
-      }
-    ],
     "zdhxy": [
       {
         "title": "自动化工程学院",
@@ -19125,6 +19684,16 @@
           "/:id/list.htm"
         ],
         "target": "/shiep/zs/:id"
+      }
+    ],
+    "zzb": [
+      {
+        "title": "组织部（老干部处、党校）",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/zzb/:id"
       }
     ]
   },
@@ -22252,6 +22821,29 @@
       }
     ]
   },
+  "utgd.net": {
+    "_name": "UNTAG",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#untag-fen-lei",
+        "source": [
+          "/category/s/:category",
+          "/"
+        ],
+        "target": "/utgd/:category"
+      },
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/new-media.html#untag-zhuan-ti",
+        "source": [
+          "/topic",
+          "/"
+        ],
+        "target": "/utgd/topic/:topic"
+      }
+    ]
+  },
   "gixnetwork.org": {
     "_name": "University of Washington",
     ".": [
@@ -22904,6 +23496,19 @@
           "/wiki/Special:新闻订阅"
         ],
         "target": "/wikinews/latest"
+      }
+    ]
+  },
+  "winstall.app": {
+    "_name": "winstall",
+    ".": [
+      {
+        "title": "应用更新",
+        "docs": "https://docs.rsshub.app/program-update.html#winstall",
+        "source": [
+          "/apps/:appId"
+        ],
+        "target": "/winstall/:appId"
       }
     ]
   },
@@ -25307,54 +25912,6 @@
       {
         "title": "页面种子",
         "docs": "https://docs.rsshub.app/multimedia.html#onejav",
-        "source": [
-          "/:type",
-          "/:type/:key",
-          "/:type/:key/:morekey"
-        ]
-      }
-    ]
-  },
-  "141jav.com": {
-    "_name": "141JAV BT",
-    ".": [
-      {
-        "title": "今日种子",
-        "docs": "https://docs.rsshub.app/multimedia.html#141jav",
-        "source": "/"
-      },
-      {
-        "title": "今日演员",
-        "docs": "https://docs.rsshub.app/multimedia.html#141jav",
-        "source": "/"
-      },
-      {
-        "title": "页面种子",
-        "docs": "https://docs.rsshub.app/multimedia.html#141jav",
-        "source": [
-          "/:type",
-          "/:type/:key",
-          "/:type/:key/:morekey"
-        ]
-      }
-    ]
-  },
-  "141ppv.com": {
-    "_name": "141ppv BT",
-    ".": [
-      {
-        "title": "今日种子",
-        "docs": "https://docs.rsshub.app/multimedia.html#141pvp",
-        "source": "/"
-      },
-      {
-        "title": "今日演员",
-        "docs": "https://docs.rsshub.app/multimedia.html#141ppv",
-        "source": "/"
-      },
-      {
-        "title": "页面种子",
-        "docs": "https://docs.rsshub.app/multimedia.html#141ppv",
         "source": [
           "/:type",
           "/:type/:key",
