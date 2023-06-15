@@ -167,6 +167,9 @@
     "/423down/:category/:type": [
         "Fatpandac"
     ],
+    "/4ksj/forum/:id?": [
+        "nczitzk"
+    ],
     "/500px/tribe/set/:id": [
         "TonyRL"
     ],
@@ -1337,6 +1340,15 @@
     "/dahecube/:type?": [
         "linbuxiao"
     ],
+    "/daily/": [
+        "Rjnishant530"
+    ],
+    "/daily/discussed": [
+        "Rjnishant530"
+    ],
+    "/daily/upvoted": [
+        "Rjnishant530"
+    ],
     "/dapenti/tugua": [
         "tgly307"
     ],
@@ -1352,6 +1364,9 @@
     ],
     "/dayanzai/dayanzai/:category/:fulltext?": [
         "nitezs"
+    ],
+    "/dblp/:field": [
+        "ytno1"
     ],
     "/dbmv/:category?": [
         "kba977"
@@ -1497,6 +1512,9 @@
     ],
     "/dongqiudi/top_news/:id?": [
         "HendricksZheng"
+    ],
+    "/dorohedoro/news": [
+        "nczitzk"
     ],
     "/douban/book/latest": [
         "fengkx"
@@ -3579,6 +3597,9 @@
     "/natgeo/:cat/:type?": [
         "fengkx"
     ],
+    "/nationalgeographic/latest-stories": [
+        "miles170"
+    ],
     "/nature/cover": [
         "y9c"
     ],
@@ -3633,6 +3654,12 @@
     ],
     "/neea/:type?": [
         "SunShinenny"
+    ],
+    "/nenu/sohac/:path+": [
+        "nczitzk"
+    ],
+    "/nenu/yjsy/:path+": [
+        "nczitzk"
     ],
     "/neu/bmie/:type": [
         "tennousuathena"
@@ -4433,6 +4460,9 @@
     ],
     "/rarehistoricalphotos/": [
         "TonyRL"
+    ],
+    "/rattibha/user/:user": [
+        "yshalsager"
     ],
     "/reactnewsletter": [
         "meixger"
@@ -5488,10 +5518,13 @@
     "/usts/juch/:type?": [
         "Fatpandac"
     ],
-    "/utgd/:category?": [
+    "/utgd/timeline": [
         "nczitzk"
     ],
     "/utgd/topic/:topic?": [
+        "nczitzk"
+    ],
+    "/utgd/:category?": [
         "nczitzk"
     ],
     "/uw/gix/news/:category": [
@@ -5745,6 +5778,12 @@
     ],
     "/wsyu/news/:type?": [
         "Derekmini"
+    ],
+    "/wtu/:type": [
+        "loyio"
+    ],
+    "/wtu/job/:type": [
+        "ticks-tan"
     ],
     "/wxkol/show/:id": [
         "TonyRL"
@@ -6133,6 +6172,9 @@
     ],
     "/zhiy/posts/:author": [
         "TonyRL"
+    ],
+    "/zhubai/top20": [
+        "nczitzk"
     ],
     "/zhubai/:id": [
         "naixy28"
@@ -7240,7 +7282,6 @@
     "/growincity/news/:id?": [],
     "/thrillist/:tag?": [],
     "/dxy/vaccine/:province?/:city?/:location?": [],
-    "/wtu/:type": [],
     "/tingshen": [],
     "/gov/mohrss/sbjm/:category?": [],
     "/shinybbs/latest": [],
