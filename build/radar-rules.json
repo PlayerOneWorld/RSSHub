@@ -7876,6 +7876,19 @@
       }
     ]
   },
+  "fx678.com": {
+    "_name": "汇通网",
+    ".": [
+      {
+        "title": "7x24 小时快讯",
+        "docs": "https://docs.rsshub.app/finance.html#hui-tong-wang",
+        "source": [
+          "/kx"
+        ],
+        "target": "/fx678/kx"
+      }
+    ]
+  },
   "fzmtr.com": {
     "_name": "福州地铁",
     "www": [
@@ -10733,6 +10746,20 @@
         "docs": "https://docs.rsshub.app/traditional-media.html#huan-qiu",
         "source": "/",
         "target": "/news/huanqiu/:category?"
+      }
+    ]
+  },
+  "huggingface.co": {
+    "_name": "Hugging Face",
+    ".": [
+      {
+        "title": "Daily Papers",
+        "docs": "https://docs.rsshub.app/programming.html#huggingface",
+        "source": [
+          "/papers",
+          "/"
+        ],
+        "target": "/huggingface/daily-papers"
       }
     ]
   },
@@ -24029,6 +24056,17 @@
       {
         "title": "人事处",
         "docs": "https://docs.rsshub.app/university.html#xi-an-li-gong-da-xue"
+      }
+    ]
+  },
+  "xboxfan.com": {
+    "_name": "盒心光环",
+    ".": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/game.html#he-xin-guang-huan",
+        "source": "/",
+        "target": "/xboxfan/news"
       }
     ]
   },
