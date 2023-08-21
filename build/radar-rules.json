@@ -1660,6 +1660,17 @@
       }
     ]
   },
+  "aip.org": {
+    "_name": "American Institute of Physics",
+    "pubs": [
+      {
+        "title": "Journal",
+        "docs": "https://docs.rsshub.app/routes/journal#american-institute-of-physics",
+        "source": "/:pub/:jrn",
+        "target": "/aip/:pub/:jrn"
+      }
+    ]
+  },
   "airchina.com.cn": {
     "_name": "中国国际航空公司",
     "www": [
@@ -2246,19 +2257,43 @@
     "_name": "Aqara",
     ".": [
       {
-        "title": "News",
-        "docs": "https://docs.rsshub.app/routes/other#aqara-news",
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/other#aqara-xin-wen",
         "source": [
-          "/news",
-          "/"
+          "/:region/about-us/news",
+          "/news"
         ],
-        "target": "/aqara/news"
+        "target": "/aqara/:region/news"
+      },
+      {
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/routes/other#aqara-bo-ke",
+        "source": [
+          "/:region/blog"
+        ],
+        "target": "/aqara/:region/blog"
+      },
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/other#aqara-fen-lei",
+        "source": [
+          "/:region/category/:id"
+        ],
+        "target": "/aqara/:region/category/:id"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/routes/other#aqara-biao-qian",
+        "source": [
+          "/:region/tag/:id"
+        ],
+        "target": "/aqara/:region/tag/:id"
       }
     ],
     "community": [
       {
-        "title": "Community",
-        "docs": "https://docs.rsshub.app/routes/other#aqara-community",
+        "title": "社区",
+        "docs": "https://docs.rsshub.app/routes/other#aqara-she-qu",
         "source": [
           "/pc",
           "/"
@@ -3836,7 +3871,7 @@
     "weekly": [
       {
         "title": "财新周刊",
-        "docs": "https://docs.rsshub.app/traditional-media.html#cai-xin-wang",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#cai-xin-wang",
         "source": [
           "/",
           "/*"
@@ -3895,6 +3930,17 @@
         "target": "/cas/cg/:caty?"
       }
     ],
+    "www.genetics": [
+      {
+        "title": "遗传与生物学研究所 - 学术活动",
+        "docs": "https://docs.rsshub.app/university.html#zhong-guo-ke-xue-yuan",
+        "source": [
+          "/jixs/yg",
+          "/"
+        ],
+        "target": "/cas/genetics/xshd"
+      }
+    ],
     "www.ia": [
       {
         "title": "自动化所",
@@ -3904,6 +3950,17 @@
           "/"
         ],
         "target": "/cas/ia/yjs"
+      }
+    ],
+    "www.iee": [
+      {
+        "title": "电工研究所 科研动态",
+        "docs": "https://docs.rsshub.app/routes/university#zhong-guo-ke-xue-yuan",
+        "source": [
+          "/xwzx/kydt",
+          "/"
+        ],
+        "target": "/cas/iee/kydt"
       }
     ],
     "www.is": [
@@ -3924,17 +3981,6 @@
           "/"
         ],
         "target": "/cas/sim/kyjz"
-      }
-    ],
-    "www.iee": [
-      {
-        "title": "电工研究所 科研动态",
-        "docs": "https://docs.rsshub.app/routes/university#zhong-guo-ke-xue-yuan",
-        "source": [
-          "/xwzx/kydt",
-          "/"
-        ],
-        "target": "/cas/iee/kydt"
       }
     ]
   },
@@ -7698,7 +7744,7 @@
     "insider": [
       {
         "title": "Bullets",
-        "docs": "https://docs.rsshub.app/en/finance.html#finology-insider",
+        "docs": "https://docs.rsshub.app/en/routes/finance#finology-insider",
         "source": [
           "/bullets"
         ],
@@ -7706,19 +7752,19 @@
       },
       {
         "title": "Category",
-        "docs": "https://docs.rsshub.app/en/finance.html#finology-insider",
+        "docs": "https://docs.rsshub.app/en/routes/finance#finology-insider",
         "source": "/:category",
         "target": "/finology/:category"
       },
       {
         "title": "Most Viewed",
-        "docs": "https://docs.rsshub.app/en/finance.html#finology-insider",
+        "docs": "https://docs.rsshub.app/en/routes/finance#finology-insider",
         "source": "/most-viewed",
         "target": "/finology/most-viewed/monthly"
       },
       {
         "title": "Trending Topic",
-        "docs": "https://docs.rsshub.app/en/finance.html#finology-insider",
+        "docs": "https://docs.rsshub.app/en/routes/finance#finology-insider",
         "source": [
           "/tag/:topic"
         ],
@@ -7903,7 +7949,6 @@
         "title": "首页",
         "docs": "https://docs.rsshub.app/routes/new-media#foresight-news-shou-ye",
         "source": [
-          "/article",
           "/"
         ],
         "target": "/foresightnews"
@@ -7912,7 +7957,6 @@
         "title": "文章",
         "docs": "https://docs.rsshub.app/routes/new-media#foresight-news-wen-zhang",
         "source": [
-          "/article",
           "/"
         ],
         "target": "/foresightnews/article"
@@ -9886,7 +9930,7 @@
     ".": [
       {
         "title": "Articles",
-        "docs": "https://docs.rsshub.app/en/new-media.html#grist",
+        "docs": "https://docs.rsshub.app/en/routes/new-media#grist",
         "source": [
           "/articles/"
         ],
@@ -9894,19 +9938,19 @@
       },
       {
         "title": "Featured",
-        "docs": "https://docs.rsshub.app/en/new-media.html#grist",
+        "docs": "https://docs.rsshub.app/en/routes/new-media#grist",
         "source": "/",
         "target": "/grist/featured"
       },
       {
         "title": "Series",
-        "docs": "https://docs.rsshub.app/en/new-media.html#grist",
+        "docs": "https://docs.rsshub.app/en/routes/new-media#grist",
         "source": "/series/:series",
         "target": "/grist/series/:series"
       },
       {
         "title": "Topic",
-        "docs": "https://docs.rsshub.app/en/new-media.html#grist",
+        "docs": "https://docs.rsshub.app/en/routes/new-media#grist",
         "source": [
           "/:topic"
         ],
@@ -17260,6 +17304,20 @@
       }
     ]
   },
+  "nwafu.edu.cn": {
+    "_name": "西北农林科技大学",
+    ".": [
+      {
+        "title": "校园要闻",
+        "docs": "https://docs.rsshub.app/routes/university#xi-bei-nong-lin-ke-ji-da-xue-xiao-yuan-yao-wen",
+        "source": [
+          "/tzgg.htm",
+          "/"
+        ],
+        "target": "/nwafu/jiaowu"
+      }
+    ]
+  },
   "nyaa.si": {
     "_name": "nyaa",
     ".": [
@@ -19326,8 +19384,8 @@
         "target": "/science/early/:journal"
       },
       {
-        "title": "Science Blogs",
-        "docs": "https://docs.rsshub.app/journal.html#science-xi-lie",
+        "title": "博客",
+        "docs": "https://docs.rsshub.app/routes/journal#science-xi-lie",
         "source": [
           "/blogs/:name"
         ],
@@ -19354,22 +19412,6 @@
           "/"
         ],
         "target": "/sciencenet/user/:id"
-      }
-    ]
-  },
-  "scitation.org": {
-    "_name": "scitation",
-    ".": [
-      {
-        "title": "journal",
-        "docs": "https://docs.rsshub.app/routes/journal#scitation",
-        "source": ":pub.scitation.org/toc/:jrn",
-        "target": "/scitation/:pub/:jrn"
-      },
-      {
-        "title": "section",
-        "docs": "https://docs.rsshub.app/routes/journal#scitation",
-        "source": ":pub.scitation.org/toc/:jrn"
       }
     ]
   },
@@ -21643,7 +21685,7 @@
   },
   "stockedge.com": {
     "_name": "Stock Edge",
-    ".": [
+    "web": [
       {
         "title": "Daily Updates News",
         "docs": "https://docs.rsshub.app/routes/en/finance#stock-edge",
@@ -23216,6 +23258,12 @@
         "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
         "source": "/column/:id",
         "target": "/zhihu/zhuanlan/:id"
+      },
+      {
+        "title": "xhu - 话题",
+        "docs": "https://docs.rsshub.app/routes/social-media#zhi-hu",
+        "source": "/topic/:topicId/:type",
+        "target": "/zhihu/xhu/topic/:topicId"
       }
     ],
     "zhuanlan": [
@@ -24974,6 +25022,19 @@
           "/"
         ],
         "target": "/xiaomiyoupin/latest"
+      }
+    ]
+  },
+  "xiaote.com": {
+    "_name": "小特社区",
+    ".": [
+      {
+        "title": "首页帖子",
+        "docs": "https://docs.rsshub.app/bbs#xiao-te-she-qu",
+        "source": [
+          "/"
+        ],
+        "target": "/xiaote/news"
       }
     ]
   },
@@ -26740,7 +26801,7 @@
     "www": [
       {
         "title": "ads",
-        "docs": "https://docs.rsshub.app/routes/en/shopping#leboncoin",
+        "docs": "https://docs.rsshub.app/routes/shopping#leboncoin",
         "source": "/recherche"
       }
     ]
@@ -27041,38 +27102,38 @@
     "www": [
       {
         "title": "新闻中心",
-        "docs": "http://docs.rsshub.app/university.html#hu-bei-gong-ye-da-xue",
+        "docs": "http://docs.rsshub.app/university#hu-bei-gong-ye-da-xue",
         "source": "/xwzx/:name"
       }
     ],
     "jsjxy": [
       {
         "title": "新闻动态",
-        "docs": "http://docs.rsshub.app/university.html#hu-bei-gong-ye-da-xue",
+        "docs": "http://docs.rsshub.app/routes/university#hu-bei-gong-ye-da-xue",
         "source": "/index/xwdt.htm",
         "target": "/hbut/cs/xwdt"
       },
       {
         "title": "通知公告",
-        "docs": "http://docs.rsshub.app/university.html#hu-bei-gong-ye-da-xue",
+        "docs": "http://docs.rsshub.app/routes/university#hu-bei-gong-ye-da-xue",
         "source": "/index/tzgg.htm",
         "target": "/hbut/cs/tzgg"
       },
       {
         "title": "教学信息",
-        "docs": "http://docs.rsshub.app/university.html#hu-bei-gong-ye-da-xue",
+        "docs": "http://docs.rsshub.app/routes/university#hu-bei-gong-ye-da-xue",
         "source": "/jxxx.htm",
         "target": "/hbut/cs/jxxx"
       },
       {
         "title": "科研动态",
-        "docs": "http://docs.rsshub.app/university.html#hu-bei-gong-ye-da-xue",
+        "docs": "http://docs.rsshub.app/routes/university#hu-bei-gong-ye-da-xue",
         "source": "/kxyj/kydt.htm",
         "target": "/hbut/cs/kydt"
       },
       {
         "title": "党建活动",
-        "docs": "http://docs.rsshub.app/university.html#hu-bei-gong-ye-da-xue",
+        "docs": "http://docs.rsshub.app/routes/university#hu-bei-gong-ye-da-xue",
         "source": "/djhd/djhd.htm",
         "target": "/hbut/cs/djhd"
       }
@@ -27153,13 +27214,13 @@
     "ece": [
       {
         "title": "ECE News",
-        "docs": "http://docs.rsshub.app/en/university.html#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/news",
         "target": "/umass/amherst/ecenews"
       },
       {
         "title": "ECE Seminar",
-        "docs": "http://docs.rsshub.app/en/university.html#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/seminars",
         "target": "/umass/amherst/eceseminar"
       }
@@ -27167,7 +27228,7 @@
     "www.cics": [
       {
         "title": "CICS News",
-        "docs": "http://docs.rsshub.app/en/university.html#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/news",
         "target": "/umass/amherst/csnews"
       }
@@ -27175,13 +27236,13 @@
     "www": [
       {
         "title": "IPO Events",
-        "docs": "http://docs.rsshub.app/en/university.html#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/ipo/iss/events",
         "target": "/umass/amherst/ipoevents"
       },
       {
         "title": "IPO Featured Stories",
-        "docs": "http://docs.rsshub.app/en/university.html#umass-amherst",
+        "docs": "http://docs.rsshub.app/routes/university#umass-amherst",
         "source": "/ipo/iss/featured-stories",
         "target": "/umass/amherst/ipostories"
       }
@@ -27293,7 +27354,7 @@
     ".": [
       {
         "title": "不安全资讯",
-        "docs": "http://docs.rsshub.app/new-media.html#bu-an-quan",
+        "docs": "http://docs.rsshub.app/routes/new-media#bu-an-quan",
         "source": "/",
         "target": "/buaq"
       }
