@@ -1,4 +1,3 @@
-import Route from '@site/src/components/Route';
 
 # 🎥 Live
 
@@ -26,7 +25,7 @@ import Route from '@site/src/components/Route';
 
 ## Yoasobi Official {#yoasobi-official}
 
-### News & Biography {#yoasobi-official-news-%26-biography}
+### News & Biography {#yoasobi-official-news-biography}
 
 <Route author="Kiotlin" example="/yoasobi-music/info/news" path="/yoasobi-music/info/:category?" paramsDesc={['`news`, `biography`']} radar="1" rssbud="1" />
 
@@ -37,6 +36,12 @@ import Route from '@site/src/components/Route';
 ### Media {#yoasobi-official-media}
 
 <Route author="Kiotlin" example="/yoasobi-music/media" path="/yoasobi-music/media" radar="1" rssbud="1" />
+
+## YouTube Live {#youtube-live}
+
+### Live {#youtube-live-live}
+
+<Route author="sussurr127" path="/youtube/live/:username/:embed?" example="/youtube/live/@GawrGura" paramsDesc={['YouTuber id', 'Default to embed the video, set to any value to disable embedding']} radar="1"/>
 
 ## 哔哩哔哩直播 {#bi-li-bi-li-zhi-bo}
 
@@ -52,7 +57,7 @@ import Route from '@site/src/components/Route';
 
 <Route author="Qixingchen" example="/bilibili/live/area/207/online" path="/bilibili/live/area/:areaID/:order" paramsDesc={['分区 ID 分区增删较多, 可通过 [分区列表](https://api.live.bilibili.com/room/v1/Area/getList) 查询', '排序方式, live_time 开播时间, online 人气']}>
 
-:::caution 注意
+:::caution
 
 由于接口未提供开播时间，如果直播间未更换标题与分区，将视为一次。如果直播间更换分区与标题，将视为另一项
 

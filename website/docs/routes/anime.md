@@ -1,5 +1,3 @@
-import Route from '@site/src/components/Route';
-
 # 🎨️ ACG
 
 ## 005.tv {#005.tv}
@@ -8,9 +6,9 @@ import Route from '@site/src/components/Route';
 
 <Route author="junfengP" example="/005tv/zx/latest" path="/005tv/zx/latest"/>
 
-## 1draw #深夜の真剣お絵描き 60 分一本勝負 {#1draw-%23-shen-ye-%E3%81%AE-zhen-jian-%E3%81%8A-hui-miao-%E3%81%8D-60-fen-yi-ben-sheng-fu}
+## 1draw #深夜の真剣お絵描き 60 分一本勝負 {#1draw-shen-ye-%E3%81%AE-zhen-jian-%E3%81%8A-hui-miao-%E3%81%8D-60-fen-yi-ben-sheng-fu}
 
-### 投稿一览 {#1draw-%23-shen-ye-%E3%81%AE-zhen-jian-%E3%81%8A-hui-miao-%E3%81%8D-60-fen-yi-ben-sheng-fu-tou-gao-yi-lan}
+### 投稿一览 {#1draw-shen-ye-%E3%81%AE-zhen-jian-%E3%81%8A-hui-miao-%E3%81%8D-60-fen-yi-ben-sheng-fu-tou-gao-yi-lan}
 
 <Route author="jackyu1996" path="/1draw/" example="/1draw/" />
 
@@ -20,7 +18,7 @@ import Route from '@site/src/components/Route';
 
 <Route author="nczitzk" example="/78dm/news" path="/78dm/news/:path+" paramsDesc={['参数，见说明，默认为空']}>
 
-:::tip 提示
+:::tip
 
 若订阅 [新品速递](https://www.78dm.net/news)，网址为 <https://www.78dm.net/news>。截取 `https://www.78dm.net` 到末尾的部分 `/news` 作为参数，此时路由为 [`/78dm/news`](https://rsshub.app/78dm/news)。
 
@@ -34,7 +32,7 @@ import Route from '@site/src/components/Route';
 
 <Route author="nczitzk" example="/78dm/eval_list" path="/78dm/eval_list/:path+" paramsDesc={['参数，见说明，默认为空']}>
 
-:::tip 提示
+:::tip
 
 若订阅 [精彩评测](https://www.78dm.net/eval_list)，网址为 <https://www.78dm.net/eval_list>。截取 `https://www.78dm.net` 到末尾的部分 `/eval_list` 作为参数，此时路由为 [`/78dm/eval_list`](https://rsshub.app/78dm/eval_list)。
 
@@ -48,7 +46,7 @@ import Route from '@site/src/components/Route';
 
 <Route author="nczitzk" example="/78dm/ht_list" path="/78dm/ht_list/:path+" paramsDesc={['参数，见说明，默认为空']}>
 
-:::tip 提示
+:::tip
 
 若订阅 [好帖推荐](https://www.78dm.net/ht_list)，网址为 <https://www.78dm.net/ht_list>。截取 `https://www.78dm.net` 到末尾的部分 `/ht_list` 作为参数，此时路由为 [`/78dm/ht_list`](https://rsshub.app/78dm/ht_list)。
 
@@ -64,7 +62,7 @@ import Route from '@site/src/components/Route';
 
 <Route author="xyqfer" example="/acfun/bangumi/5022158" path="/acfun/bangumi/:id" paramsDesc={['番剧 id']} radar="1" rssbud="1"/>
 
-:::tip 提示
+:::tip
 
 番剧 id 不包含开头的 aa。
 例如：<http://www.acfun.cn/bangumi/aa5022158> 的番剧 id 是 5022158，不包括开头的 aa。
@@ -161,6 +159,18 @@ For more tags, please go to [Search torrent](https://bangumi.moe/search/index)
 
 <Route author="magic-akari" example="/bangumi/tv/calendar/today" path="/bangumi/tv/calendar/today" radar="1"/>
 
+### 条目的通用路由格式 {#bangumi-fan-zu-ji-hua-tiao-mu-di-tong-yong-lu-you-ge-shi}
+
+<Route author="JimenezLi" example="/bangumi/tv/subject/328609/ep/true" path="/bangumi/tv/subject/:id/:type?/:showOriginalName?" paramsDesc={['条目 id, 在条目页面的地址栏查看', '条目类型，可选值为 `ep`, `comments`, `blogs`, `topics`，默认为 `ep`', '显示番剧标题原名，可选值 0/1/false/true，默认为 false']}>
+
+:::caution
+
+此通用路由仅用于对路由参数的描述，具体信息请查看下方与条目相关的路由
+
+:::
+
+</Route>
+
 ### 条目的章节 {#bangumi-fan-zu-ji-hua-tiao-mu-di-zhang-jie}
 
 <Route author="SettingDust" example="/bangumi/tv/subject/240038" path="/bangumi/tv/subject/:id" paramsDesc={['条目 id, 在条目页面的地址栏查看']} radar="1"/>
@@ -205,7 +215,7 @@ For more tags, please go to [Search torrent](https://bangumi.moe/search/index)
 
 <Route author="chengyuhui" example="/cngal/weekly" path="/cngal/weekly" radar="1" rssbud="1"/>
 
-### 制作者 / 游戏新闻 {#cngal-zhi-zuo-zhe-%2F-you-xi-xin-wen}
+### 制作者 / 游戏新闻 {#cngal-zhi-zuo-zhe-you-xi-xin-wen}
 
 <Route author="chengyuhui" example="/cngal/entry/2693" path="/cngal/entry/:id" paramsDesc={['词条ID，游戏或制作者页面URL的最后一串数字']} radar="1" rssbud="1"/>
 
@@ -227,7 +237,7 @@ For more tags, please go to [Search torrent](https://bangumi.moe/search/index)
 
 <Route author="nczitzk" example="/dlsite/home/new" path="/dlsite/:path+" paramsDesc={['Path, `/home/new` by default, as Release Calendar']}>
 
-:::tip Tip
+:::tip
 
 To subscribe to this route, you can first visit the site and specify filters, and then fill in the field after `https://www.dlsite.com/` in the URL of the corresponding page at the path of the route. Here are 2 examples.
 
@@ -253,7 +263,7 @@ If you subscribe to [Discounted works Latest Discounts - Newest to Oldest](https
 
 <Route author="cssxsh" example="/dlsite/campaign/home" path="/dlsite/campaign/:type/:free?" paramsDesc={['Type, see table above', 'Free only, empty means false, other value means true']}/>
 
-### Ci-en Creators' Article {#dlsite-ci-en-creators'-article}
+### Ci-en Creators' Article {#dlsite-ci-en-creators-article}
 
 <Route author="nczitzk" example="/dlsite/ci-en/:id/article" path="/dlsite/ci-en/7400/article" paramsDesc={['Creator id, can be found in URL']}/>
 
@@ -351,7 +361,7 @@ Sources
 | ----- | ------- | ------------ | ------- | ------------- | ------ | ------- | ------ |
 | posts | patreon | fanbox       | gumroad | subscribestar | dlsite | discord | fantia |
 
-:::tip Tip
+:::tip
 
 When `posts` is selected as the value of the parameter **source**, the parameter **id** does not take effect.
 
@@ -385,8 +395,10 @@ When `posts` is selected as the value of the parameter **source**, the parameter
 <Route author="axojhf" example="/lovelive-anime/schedules" path="/schedules/:serie?/:category?" paramsDesc={['Love Live! Series sub-projects abbreviation, see the following table', 'The official website lists the categories, see the following table for details']} radar="1">
 
 :::tip Please note!
+
 The schedule and other information obtained by this route is subject to the official website announcement!
 The RSS routing has not been rigorously tested and the information provided cannot be guaranteed accurate!
+
 :::
 
 | Sub-project Name (not full name) | 全シリーズ                        | Lovelive!  | Lovelive! Sunshine!! | Lovelive! Nijigasaki High School Idol Club | Lovelive! Superstar!! | ラブライブ！スクールアイドルミュージカル |
@@ -411,7 +423,7 @@ The RSS routing has not been rigorously tested and the information provided cann
 
 <Route author="nczitzk" example="/mox" path="/mox/:category?" paramsDesc={['分类，可在对应分类页 URL 中找到']}>
 
-:::tip 提示
+:::tip
 
 在首页将分类参数选择确定后跳转到的分类页面 URL 中，`/l/` 后的字段即为分类参数。
 
@@ -433,7 +445,7 @@ The RSS routing has not been rigorously tested and the information provided cann
 
 ## QooApp {#qooapp}
 
-### Game Store - Review {#qooapp-game-store---review}
+### Game Store - Review {#qooapp-game-store-review}
 
 <Route author="TonyRL" example="/qoo-app/apps/en/comment/7675" path="/qoo-app/apps/:lang?/comment/:id" paramsDesc={['Language, see the table below, empty means `中文`', 'Game ID, can be found in URL']}  radar="1">
 
@@ -443,15 +455,15 @@ The RSS routing has not been rigorously tested and the information provided cann
 
 </Route>
 
-### Game Store - Article {#qooapp-game-store---article}
+### Game Store - Article {#qooapp-game-store-article}
 
 <Route author="TonyRL" example="/qoo-app/apps/en/post/7675" path="/qoo-app/apps/:lang?/post/:id" paramsDesc={['Language, see the table above, empty means `中文`', 'Game ID, can be found in URL']}  radar="1"/>
 
-### Game Store - Notes {#qooapp-game-store---notes}
+### Game Store - Notes {#qooapp-game-store-notes}
 
 <Route author="TonyRL" example="/qoo-app/apps/en/note/7675" path="/qoo-app/apps/:lang?/note/:id" paramsDesc={['Language, see the table above, empty means `中文`', 'Game ID, can be found in URL']}  radar="1"/>
 
-### Game Store - Cards {#qooapp-game-store---cards}
+### Game Store - Cards {#qooapp-game-store-cards}
 
 <Route author="TonyRL" example="/qoo-app/apps/en/card/7675" path="/qoo-app/apps/:lang?/card/:id" paramsDesc={['Language, see the table above, empty means `中文`', 'Game ID, can be found in URL']}  radar="1"/>
 
@@ -571,15 +583,15 @@ For example: <https://www.webtoons.com/zh-hant/drama/gongzhuweimian/list?title_n
 
 <Route author="Ye11" example="/xmanhua/73xm" path="/xmanhua/:uid" paramsDesc={['漫画 id,在浏览器中可见，例如鬼灭之刃对应的 id 为 `73xm`']}/>
 
-## 俺の 3D エロ動画 (oreno3d) {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-(oreno3d)}
+## 俺の 3D エロ動画 (oreno3d) {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-oreno3d}
 
-:::tip Tip
+:::tip
 
 You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receive the video update messages and download them automatically
 
 :::
 
-### Keyword Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-(oreno3d)-keyword-search}
+### Keyword Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-oreno3d-keyword-search}
 
 <Route author="xueli-sherryli" example="/oreno3d/search/bronya/latest/1" path="/oreno3d/search/:keyword/:sort/:pagelimit?" paramsDesc={['Search keyword', 'Sort method, see the table below', 'The maximum number of pages to be crawled, the default is 1']} radar="1" rssbud="1">
 
@@ -589,19 +601,19 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 </Route>
 
-### Character Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-(oreno3d)-character-search}
+### Character Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-oreno3d-character-search}
 
 <Route author="xueli-sherryli" example="/oreno3d/characters/283/latest/1" path="/oreno3d/characters/:characterid/:sort/:pagelimit?" paramsDesc={['Character id, can be found in URL' , 'Sort method, see the table above', 'The maximum number of pages to be crawled, the default is 1']} radar="1" rssbud="1"/>
 
-### Author Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-(oreno3d)-author-search}
+### Author Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-oreno3d-author-search}
 
 <Route author="xueli-sherryli" example="/oreno3d/authors/3189/latest/1" path="/oreno3d/authors/:authorid/:sort/:pagelimit?" paramsDesc={['Author id, can be found in URL' , 'Sort method, see the table above', 'The maximum number of pages to be crawled, the default is 1']} radar="1" rssbud="1"/>
 
-### Tags Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-(oreno3d)-tags-search}
+### Tags Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-oreno3d-tags-search}
 
 <Route author="xueli-sherryli" example="/oreno3d/tags/177/latest/1" path="/oreno3d/tags/:tagid/:sort/:pagelimit?" paramsDesc={['Tag id, can be found in URL', 'Sort method, see the table above', 'The maximum number of pages to be crawled, the default is 1']} radar="1" rssbud="1"/>
 
-### Origins Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-(oreno3d)-origins-search}
+### Origins Search {#an-%E3%81%AE-3d-%E3%82%A8%E3%83%AD-dong-hua-oreno3d-origins-search}
 
 <Route author="xueli-sherryli" example="/oreno3d/origins/3/latest/1" path="/oreno3d/origins/:originid/:sort/:pagelimit?" paramsDesc={['Origin id, can be found in URL' , 'Sort method, see the table above', 'The maximum number of pages to be crawled, the default is 1']} radar="1" rssbud="1"/>
 
@@ -611,9 +623,9 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route author="Fatpandac" example="/baozimh/comic/guowangpaiming-shiricaofu" path="/baozimh/comic/:name" paramsDesc={['漫画名称，在漫画链接可以得到(`comic/` 后的那段)']}/>
 
-## 嘀哩嘀哩 - dilidili {#di-li-di-li---dilidili}
+## 嘀哩嘀哩 - dilidili {#di-li-di-li-dilidili}
 
-### 嘀哩嘀哩番剧更新 {#di-li-di-li---dilidili-di-li-di-li-fan-ju-geng-xin}
+### 嘀哩嘀哩番剧更新 {#di-li-di-li-dilidili-di-li-di-li-fan-ju-geng-xin}
 
 <Route author="SunShinenny" path="/dilidili/fanju/:id" example="/dilidili/fanju/onepunchman2" paramsDesc={['番剧id']}>
 
@@ -689,7 +701,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 ## 禁漫天堂 {#jin-man-tian-tang}
 
-:::tip 提示
+:::tip
 
 禁漫天堂有多个备用域名，本路由默认使用域名 <https://jmcomic.me>，若该域名无法访问，可以通过在路由最后加上 `?domain=<域名>` 指定路由访问的域名。如指定备用域名为 <https://jmcomic1.me>，则在所有禁漫天堂路由最后加上 `?domain=jmcomic1.me` 即可，此时路由为 [`/18comic?domain=jmcomic1.me`](https://rsshub.app/18comic?domain=jmcomic1.me)
 
@@ -728,7 +740,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route author="nczitzk" example="/18comic/search/photos/all/NTR" path="/18comic/search/:option?/:category?/:keyword?/:time?/:order?" paramsDesc={['选项，可选 `video` 和 `photos`，默认为 `photos`', '分类，同上表，默认为 `all` 即全部', '关键字，同上表，默认为空', '时间范围，同上表，默认为 `a` 即全部', '排列顺序，同上表，默认为 `mr` 即最新']}>
 
-:::tip 提示
+:::tip
 
 关键字必须超过两个字，这是来自网站的限制。
 
@@ -740,7 +752,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route author="nczitzk" example="/18comic/album/292282" path="/18comic/album/:id" paramsDesc={['专辑 id，可在专辑页 URL 中找到']}>
 
-:::tip 提示
+:::tip
 
 专辑 id 不包括 URL 中标题的部分。
 
@@ -770,7 +782,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 <Route author="shininome" path="/manhuagui/subscribe" example="/manhuagui/subscribe" radar="1" rssbud="1" selfhost="1">
 
-:::tip 提示
+:::tip
 
 个人订阅需要自建
 环境变量需要添加 MHGUI_COOKIE
@@ -779,11 +791,11 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 
 </Route>
 
-### 镜像站 - 漫画更新 {#kan-man-hua-jing-xiang-zhan---man-hua-geng-xin}
+### 镜像站 - 漫画更新 {#kan-man-hua-jing-xiang-zhan-man-hua-geng-xin}
 
 <Route author="btdwv" path="/manhuagui/mhgui/comic/:id/:chapterCnt?" example="/manhuagui/mhgui/comic/13317/5" paramsDesc={['漫画ID','返回章节的数量，默认为0，返回所有章节']} radar="1" rssbud="1"/>
 
-### 台湾站 - 漫画更新 {#kan-man-hua-tai-wan-zhan---man-hua-geng-xin}
+### 台湾站 - 漫画更新 {#kan-man-hua-tai-wan-zhan-man-hua-geng-xin}
 
 <Route author="btdwv" path="/manhuagui/twmanhuagui/comic/:id/:chapterCnt?" example="/manhuagui/twmanhuagui/comic/13317/5" paramsDesc={['漫画ID','返回章节的数量，默认为0，返回所有章节']} radar="1" rssbud="1"/>
 
@@ -847,7 +859,7 @@ You can use some RSS parsing libraries (like `feedpraser` in `Python`) to receiv
 | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | mt     | rise   | new    | pay    | top    | male   | female |
 
-:::tip 提示
+:::tip
 
 `time` 参数仅在 `type` 参数选为 **月票榜** 的时候生效。
 

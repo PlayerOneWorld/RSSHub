@@ -1,10 +1,8 @@
-import Route from '@site/src/components/Route';
-
 # 🔊 Multimedia
 
 ## 141JAV {#141jav}
 
-:::tip 提示
+:::tip
 
 官方提供的订阅源不支持 BT 下载订阅，地址为 <https://141jav.com/feeds/>
 
@@ -52,7 +50,7 @@ import Route from '@site/src/components/Route';
 
 ## 141PPV {#141ppv}
 
-:::tip 提示
+:::tip
 
 官方提供的订阅源不支持 BT 下载订阅，地址为 <https://141ppv.com/feeds/>
 
@@ -148,7 +146,7 @@ import Route from '@site/src/components/Route';
 
 <Route author="nczitzk" example="/4ksj/forum" path="/4ksj/forum/:id?" paramsDesc={['分类 id，默认为最新4K电影']}>
 
-:::tip 提示
+:::tip
 
 若订阅 [最新 4K 电影](https://www.4ksj.com/forum-2-1.html)，网址为 <https://www.4ksj.com/forum-2-1.html>。截取 `https://www.4ksj.com/forum-` 到末尾 `.html` 的部分 `2-1` 作为参数，此时路由为 [`/4ksj/forum/2-1`](https://rsshub.app/4ksj/forum/2-1)。
 
@@ -158,7 +156,7 @@ import Route from '@site/src/components/Route';
 
 </Route>
 
-## 60-Second Science - Scientific American {#60-second-science---scientific-american}
+## 60-Second Science - Scientific American {#60-second-science-scientific-american}
 
 <Route author="emdoe" example="/60s-science" path="/60s-science"/>
 
@@ -249,7 +247,7 @@ When `uncensored_makersr` as **Uncensored** is chosen as **Category**, the avail
 
 ## 91porn {#91porn}
 
-:::tip Tips
+:::tip
 
 91porn has multiple backup domains, routes use the permanent domain <https://91porn.com> by default. If the domain is not accessible, you can add `?domain=<domain>` to specify the domain to be used. If you want to specify the backup domain to <https://0122.91p30.com>, you can add `?domain=0122.91p30.com` to the end of all 91porn routes, then the route will become [`/91porn?domain=0122.91p30.com`](https://rsshub.app/91porn?domain=0122.91p30.com)
 
@@ -277,13 +275,16 @@ When `uncensored_makersr` as **Uncensored** is chosen as **Category**, the avail
 
 ## A 姐分享 {#a-jie-fen-xiang}
 
-<Route author="zhenhappy" example="/abskoop/nsfw" path="/abskoop/:type?" paramsDesc={['为空, 订阅主站点, `nsfw`订阅nsfw子站点']}>
+### 存档列表 {#a-jie-fen-xiang-cun-dang-lie-biao}
 
-## AV01（av01.tv） {#av01%EF%BC%88av01.tv%EF%BC%89}
+<Route author="zhenhappy" example="/abskoop/nsfw" path="/abskoop/:type?" paramsDesc={['为空, 订阅主站点, `nsfw`订阅nsfw子站点']} radar="1"/>
 
-### 演员 {#av01%EF%BC%88av01.tv%EF%BC%89-yan-yuan}
+## AV01（av01.tv） {#av01-av01.tv}
 
-:::tip 提示
+### 演员 {#av01-av01.tv-yan-yuan}
+
+:::tip
+
 当没有给定排序类型时，默认为按上传时间排序及 mr
 
 :::
@@ -296,7 +297,7 @@ When `uncensored_makersr` as **Uncensored** is chosen as **Category**, the avail
 
 </Route>
 
-### 分类 {#av01%EF%BC%88av01.tv%EF%BC%89-fen-lei}
+### 分类 {#av01-av01.tv-fen-lei}
 
 <Route author="HXHL" example="/av01/tag/中出し" path="/av01/tag/:name/:type?" paramsDesc={['分类名,必选-仅限日语,可直接在网站上找到','排序顺序,可选-可以是`mr` `rd` `bw` `tr` `lg`']}>
 
@@ -334,7 +335,7 @@ When `uncensored_makersr` as **Uncensored** is chosen as **Category**, the avail
 
 <Route author="nczitzk" example="/btzj" path="/btzj/:category?" paramsDesc={['分类，可在对应分类页 URL 中找到，默认为首页']}>
 
-:::tip 提示
+:::tip
 
 分类页中域名末尾到 `.htm` 前的字段即为对应分类，如 [电影](https://www.btbtt20.com/forum-index-fid-951.htm) <https://www.btbtt20.com/forum-index-fid-951.htm> 中域名末尾到 `.htm` 前的字段为 `forum-index-fid-951`，所以路由应为 [`/btzj/forum-index-fid-951`](https://rsshub.app/btzj/forum-index-fid-951)
 
@@ -360,7 +361,7 @@ When `uncensored_makersr` as **Uncensored** is chosen as **Category**, the avail
 | -------------------- | -------------------- |
 | forum-index-fid-1187 | forum-index-fid-1191 |
 
-:::tip 提示
+:::tip
 
 BT 之家的域名会变更，本路由以 <https://www.btbtt20.com> 为默认域名，若该域名无法访问，可以通过在路由后方加上 `?domain=<域名>` 指定路由访问的域名。如指定域名为 <https://www.btbtt15.com>，则在 `/btzj` 后加上 `?domain=btbtt15.com` 即可，此时路由为 [`/btzj?domain=btbtt15.com`](https://rsshub.app/btzj?domain=btbtt15.com)
 
@@ -382,7 +383,7 @@ BT 之家的域名会变更，本路由以 <https://www.btbtt20.com> 为默认�
 
 </Route>
 
-:::tip 提示
+:::tip
 
 由于 BT 之家域名有多个。此 feed 对应[`https://www.88btbtt.com`](https://www.88btbtt.com)域名和[`http://www.2btjia.com/`](http://www.2btjia.com/)域名.
 可空，默认为 base
@@ -393,7 +394,7 @@ BT 之家的域名会变更，本路由以 <https://www.btbtt20.com> 为默认�
 
 ### 栏目 {#cntv-lan-mu}
 
-:::tip 提示
+:::tip
 
 栏目 ID 查找示例:
 打开栏目具体某一期页面，F12 控制台输入`column_id`得到栏目 ID。
@@ -422,6 +423,18 @@ BT 之家的域名会变更，本路由以 <https://www.btbtt20.com> 为默认�
 
 ## DoMP4 影视 {#domp4-ying-shi}
 
+:::tip
+
+由于网站有多个备用域名，默认使用 `mp4us.com`，可以通过在路由最后加上 `?domain=<域名>` 切换域名。
+
+目前可用域名有：
+
+```javascript
+['domp4.cc', 'mp4kan.com', 'mp4us.com', 'wemp4.com', 'dbmp4.com']
+```
+
+:::
+
 ### 最近更新 {#domp4-ying-shi-zui-jin-geng-xin}
 
 <Route author="savokiss" example="/domp4/latest/vod" path="/domp4/latest/:type?" paramsDesc={['`vod` 代表电影，`tv` 代表电视剧，默认 vod']}  radar="1"/>
@@ -431,7 +444,9 @@ BT 之家的域名会变更，本路由以 <https://www.btbtt20.com> 为默认�
 <Route author="savokiss" example="/domp4/detail/LBTANI22222I" path="/domp4/detail/:id" paramsDesc={['从剧集详情页 URL 处获取，如：`https://www.mp4kan.com/html/LBTANI22222I.html`，取 `.html` 前面部分']} radar="1" supportBT="1"/>
 
 :::tip
+
 由于大部分详情页是 `/html/xxx.html`，还有部分是 `/detail/123.html`，所以此处做了兼容，id 取 `xxx` 或者 `123` 都可以。
+
 :::
 
 ## E-Hentai {#e-hentai}
@@ -440,7 +455,7 @@ BT 之家的域名会变更，本路由以 <https://www.btbtt20.com> 为默认�
 
 <Route author="nczitzk" example="/e-hentai/category/manga" path="/e-hentai/category/:category?/:needTorrents?/:needImages?" paramsDesc={['分类，可在对应分类页中找到，默认为首页', '需要输出种子文件，填写 true/yes 表示需要，默认需要', '需要显示大图，填写 true/yes 表示需要，默认需要']}>
 
-:::tip 提示
+:::tip
 
 参数 **需要输出种子文件** 设置为 `true` `yes` `t` `y` 等值后，RSS 会携带种子文件的路径，以供支持 RSS 的下载工具订阅下载。
 
@@ -468,7 +483,7 @@ BT 之家的域名会变更，本路由以 <https://www.btbtt20.com> 为默认�
 
 <Route author="nczitzk" example="/e-hentai/tag/language:chinese" path="/e-hentai/tag/:tag?" paramsDesc={['标签，可在对应标签页中找到，默认为首页']}>
 
-:::tip 提示
+:::tip
 
 参数 **需要输出种子文件**、**需要显示大图** 的说明同上，以下是一个例子：
 
@@ -482,7 +497,7 @@ BT 之家的域名会变更，本路由以 <https://www.btbtt20.com> 为默认�
 
 <Route author="nczitzk" example="/e-hentai/search/f_search=haha" path="/e-hentai/search/:keyword?" paramsDesc={['关键字，可以在搜索结果页的 URL 中找到，默认为首页']}>
 
-:::tip 提示
+:::tip
 
 参数 **需要输出种子文件**、**需要显示大图** 的说明同上，以下是一个例子：
 
@@ -540,7 +555,7 @@ Official RSS: <https://eztv.io/ezrss.xml>
 
 <Route author="nczitzk" example="/ibc/radio/maitta" path="/ibc/radio/:id?" paramsDesc={['Radio id, can be found in URL, イヤーマイッタマイッタ by default']} supportPodcast="1">
 
-:::tip Tip
+:::tip
 
 If you subscribe to [イヤーマイッタマイッタ](https://www.ibc.co.jp/radio/maitta/audio), the URL is <https://www.ibc.co.jp/radio/maitta/audio>. Intercept `maitta` between `https://www.ibc.co.jp/radio/` and `/audio/` as an argument, then the route will be [`/ibc/radio/maitta`](https://rsshub.app/ibc/radio/maitta).
 
@@ -562,7 +577,7 @@ You can change the language of each route to the languages listed below.
 
 :::
 
-:::tip Tips
+:::tip
 
 JavBus has multiple backup domains, these routes use default domain <https://javbus.com>. If the domain is unreachable, you can add `?domain=<domain>` to the end of the route to specify the domain to visit. Let say you want to use the backup domain <https://javsee.icu>, you can add `?domain=javsee.icu` to the end of the route, then the route will be [`/javbus/en?domain=javsee.icu`](https://rsshub.app/javbus?domain=javsee.icu)
 
@@ -570,11 +585,11 @@ JavBus has multiple backup domains, these routes use default domain <https://jav
 
 :::
 
-### Censored - Home {#javbus-censored---home}
+### Censored - Home {#javbus-censored-home}
 
 <Route author="MegrezZhu CoderTonyChan nczitzk" example="/javbus/en" path="/javbus/en"/>
 
-### Censored - Genre {#javbus-censored---genre}
+### Censored - Genre {#javbus-censored-genre}
 
 <Route author="MegrezZhu CoderTonyChan nczitzk" example="/javbus/en/genre/7g" path="/javbus/en/genre/:id" paramsDesc={['Genre id, can be found in URL']}>
 
@@ -582,7 +597,7 @@ For more genre, please visit [Censored - Genre](https://www.javbus.com/en/genre)
 
 </Route>
 
-### Censored - Actresses {#javbus-censored---actresses}
+### Censored - Actresses {#javbus-censored-actresses}
 
 <Route author="MegrezZhu CoderTonyChan nczitzk" example="/javbus/en/star/2jv" path="/javbus/en/star/:id" paramsDesc={['Actresses id, can be found in URL']}>
 
@@ -590,31 +605,31 @@ For more actresses, please visit [Censored JAV Idols](https://www.javbus.com/en/
 
 </Route>
 
-### Censored - Series {#javbus-censored---series}
+### Censored - Series {#javbus-censored-series}
 
 <Route author="MegrezZhu CoderTonyChan Felix2yu nczitzk" example="/javbus/en/series/44q" path="/javbus/en/series/:id" paramsDesc={['Series id, can be found in URL']} />
 
-### Censored - Studio {#javbus-censored---studio}
+### Censored - Studio {#javbus-censored-studio}
 
 <Route author="MegrezZhu CoderTonyChan Felix2yu nczitzk" example="/javbus/en/studio/ej" path="/javbus/en/studio/:id" paramsDesc={['Studio id, can be found in URL']} />
 
-### Censored - Label {#javbus-censored---label}
+### Censored - Label {#javbus-censored-label}
 
 <Route author="MegrezZhu CoderTonyChan Felix2yu nczitzk" example="/javbus/en/label/x8" path="/javbus/en/label/:id" paramsDesc={['Label id, can be found in URL']} />
 
-### Censored - Director {#javbus-censored---director}
+### Censored - Director {#javbus-censored-director}
 
 <Route author="MegrezZhu CoderTonyChan Felix2yu nczitzk" example="/javbus/en/director/4gv" path="/javbus/en/director/:id" paramsDesc={['Director id, can be found in URL']} />
 
-### Censored - Search {#javbus-censored---search}
+### Censored - Search {#javbus-censored-search}
 
 <Route author="nczitzk" example="/javbus/en/search/REBD" path="/javbus/en/search/:keyword" paramsDesc={['Keyword, empty by default']} />
 
-### Uncensored - Home {#javbus-uncensored---home}
+### Uncensored - Home {#javbus-uncensored-home}
 
 <Route author="MegrezZhu CoderTonyChan nczitzk" example="/javbus/en/uncensored" path="/javbus/en/uncensored"/>
 
-### Uncensored - Genre {#javbus-uncensored---genre}
+### Uncensored - Genre {#javbus-uncensored-genre}
 
 <Route author="MegrezZhu CoderTonyChan nczitzk" example="/javbus/en/uncensored/genre/1bc" path="/javbus/en/uncensored/genre/:id" paramsDesc={['Genre id, can be found in URL']}>
 
@@ -622,7 +637,7 @@ For more genre, please visit [Uncensored - Genre](https://www.javbus.com/en/unce
 
 </Route>
 
-### Uncensored - Actresses {#javbus-uncensored---actresses}
+### Uncensored - Actresses {#javbus-uncensored-actresses}
 
 <Route author="MegrezZhu CoderTonyChan nczitzk" example="/javbus/en/uncensored/star/b5b" path="/javbus/en/uncensored/star/:id" paramsDesc={['Actresses id, can be found in URL']}>
 
@@ -630,23 +645,23 @@ For more actresses, please visit [Uncensored JAV Idols](https://www.javbus.com/e
 
 </Route>
 
-### Uncensored - Series {#javbus-uncensored---series}
+### Uncensored - Series {#javbus-uncensored-series}
 
 <Route author="MegrezZhu CoderTonyChan Felix2yu nczitzk" example="/javbus/en/uncensored/series/1ft" path="/javbus/en/uncensored/series/:id" paramsDesc={['系列 id, can be found in URL']} />
 
-### Uncensored - Studio {#javbus-uncensored---studio}
+### Uncensored - Studio {#javbus-uncensored-studio}
 
 <Route author="MegrezZhu CoderTonyChan Felix2yu nczitzk" example="/javbus/en/uncensored/studio/3n" path="/javbus/en/uncensored/studio/:id" paramsDesc={[', can be found in URL']} />
 
-### Uncensored - Search {#javbus-uncensored---search}
+### Uncensored - Search {#javbus-uncensored-search}
 
 <Route author="nczitzk" example="/javbus/en/uncensored/search/HEYZO" path="/javbus/en/uncensored/search/:keyword" paramsDesc={['Keyword, empty by default']} />
 
-### Western - Home {#javbus-western---home}
+### Western - Home {#javbus-western-home}
 
 <Route author="MegrezZhu CoderTonyChan nczitzk" example="/javbus/en/western" path="/javbus/en/western"/>
 
-### Western - Genre {#javbus-western---genre}
+### Western - Genre {#javbus-western-genre}
 
 <Route author="MegrezZhu CoderTonyChan nczitzk" example="/javbus/en/western/genre/86" path="/javbus/en/western/genre/:id" paramsDesc={['Genre id, can be found in URL']}>
 
@@ -654,7 +669,7 @@ For more genre, please visit [Genre - Video](https://www.javbus.org/en/genre)
 
 </Route>
 
-### Western - Actresses {#javbus-western---actresses}
+### Western - Actresses {#javbus-western-actresses}
 
 <Route author="MegrezZhu CoderTonyChan nczitzk" example="/javbus/en/western/star/4hv" path="/javbus/en/western/star/:id" paramsDesc={['Actresses id, can be found in URL']}>
 
@@ -662,21 +677,21 @@ For more actresses [Western AV Idols](https://www.javbus.org/en/actresses)
 
 </Route>
 
-### Western - Series {#javbus-western---series}
+### Western - Series {#javbus-western-series}
 
 <Route author="MegrezZhu CoderTonyChan Felix2yu nczitzk" example="/javbus/en/western/series/20" path="/javbus/en/western/series/:id" paramsDesc={['Series id, can be found in URL']} />
 
-### Western - Studio {#javbus-western---studio}
+### Western - Studio {#javbus-western-studio}
 
 <Route author="nczitzk" example="/javbus/en/western/studio/4" path="/javbus/en/western/studio/:id" paramsDesc={['Studio id, can be found in URLL']} />
 
-### Western - Search {#javbus-western---search}
+### Western - Search {#javbus-western-search}
 
 <Route author="nczitzk" example="/javbus/en/western/search/Brazzers" path="/javbus/en/western/search/:keyword" paramsDesc={['Keyword, empty by default']} />
 
 ## JavDB {#javdb}
 
-:::tip 提示
+:::tip
 
 JavDB 有多个备用域名，本路由默认使用永久域名 <https://javdb.com> ，若该域名无法访问，可以通过在路由最后加上 `?domain=<域名>` 指定路由访问的域名。如指定备用域名为 <https://javdb36.com>，则在所有 JavDB 路由最后加上 `?domain=javdb36.com` 即可，此时路由为 [`/javdb?domain=javdb36.com`](https://rsshub.app/javdb?domain=javdb36.com)
 
@@ -686,7 +701,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 <https://javdb.c
 
 :::
 
-:::tip 提示
+:::tip
 
 你可以通过指定 `limit` 参数来获取特定数量的条目，即可以通过在路由后方加上 `?limit=25`，默认为单次获取 20 个条目，即默认 `?limit=20`
 
@@ -722,7 +737,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 <https://javdb.c
 
 <Route author="nczitzk" example="/javdb/tags/c2=5&c10=1" path="/javdb/tags/:query?/:category?" paramsDesc={['筛选，默认为 `c10=1`', '分类，见下表，默认为 `有碼`']} anticrawler="1">
 
-:::tip 提示
+:::tip
 
 在 [分類](https://javdb.com/tags) 中选定分类后，URL 中 `tags?` 后的字段即为筛选参数。
 
@@ -886,7 +901,7 @@ JavDB 有多个备用域名，本路由默认使用永久域名 <https://javdb.c
 | ------------------------------ | -------------------- |
 | 1                              | 2                    |
 
-:::tip Tip
+:::tip
 
 See [Categories](https://www.javlibrary.com/en/genres.php) to view all categories.
 
@@ -902,7 +917,7 @@ See [Categories](https://www.javlibrary.com/en/genres.php) to view all categorie
 | ------------------------------ | -------------------- |
 | 1                              | 2                    |
 
-:::tip Tip
+:::tip
 
 See [Ranking](https://www.javlibrary.com/en/star_mostfav.php) to view stars by ranks.
 
@@ -968,7 +983,7 @@ See [Directory](https://www.javlibrary.com/en/star_list.php) to view all stars.
 
 ### 影视分类 {#mp4ba-ying-shi-fen-lei}
 
-<Route author="SettingDust wolfyu1991"  example="/mp4ba/6" path="/mp4ba/:param" paramsDesc={['类型']} supportBT="1"/>
+<Route author="SettingDust wolfyu1991"  example="/mp4ba/6" path="/mp4ba/:param" paramsDesc={['类型']} supportBT="1">
 
 **类型参考这里**
 
@@ -1012,19 +1027,31 @@ See [Directory](https://www.javlibrary.com/en/star_list.php) to view all stars.
 
 ### 分类 {#new-zi-mu-zu-fen-lei}
 
-<Route author="nczitzk" example="/newzmz" path="/newzmz/:category?" paramsDesc={['分类，见下表，默认为最近更新']}>
+<Route author="nczitzk" example="/newzmz" path="/newzmz/:category?/:downLinkType?" paramsDesc={['分类，见下表，默认为最近更新', '下载链接类型，默认为磁力链']}>
 
-| 最近更新 | 剧集推荐 | 电影推荐 | 纪录片推荐 | 动画推荐 | 真人秀推荐 |
-| -------- | -------- | -------- | ---------- | -------- | ---------- |
-| 1        | 2        | 3        | 4          | 5        | 6          |
+:::tip
+
+`downLinkType` 参数指下载链接类型，默认为 **磁力链**。网站提供的下载链接类型包括但不限于 **磁力链**、**百度网盘**、**阿里云盘**、**夸克网盘**、**UC网盘** 等。若无法找到指定类型的下载链接，将会返回第 1 条下载链接。
+
+与其他路由不同的是，本路由的 `limit` 参数作用于获取剧集数量，所以返回的总条目数根据每次获取的剧集所包含的条目变更而不同。
+
+:::
+
+| 制作中 | 最近更新 | 剧集推荐 | 电影推荐 | 纪录片推荐 | 动画推荐 | 真人秀推荐 |
+| ------ | -------- | -------- | -------- | ---------- | -------- | ---------- |
+| 0      | 1        | 2        | 3        | 4          | 5        | 6          |
 
 </Route>
 
 ### 指定剧集 {#new-zi-mu-zu-zhi-ding-ju-ji}
 
-<Route author="nczitzk" example="/newzmz/qEzRyY3v" path="/newzmz/:id?" paramsDesc={['剧集 id，可在剧集下载页 URL 中找到']}>
+<Route author="nczitzk" example="/newzmz/qEzRyY3v" path="/newzmz/:id?/:downLinkType?" paramsDesc={['剧集 id，可在剧集下载页 URL 中找到', '下载链接类型，默认为磁力链']}>
 
-如：雪国列车（剧版）的下载页 URL 为 `https://ysfx.tv/view/qEzRyY3v.html`，即剧集 id 为 `qEzRyY3v`。
+:::tip
+
+[雪国列车(剧版)](https://nzmz.xyz/details-qEzRyY3v.html) 的下载页 URL 为 <https://v.ys99.xyz/view/qEzRyY3v.html>，即剧集 id 为 `qEzRyY3v`
+
+:::
 
 </Route>
 
@@ -1056,7 +1083,7 @@ See [Directory](https://www.javlibrary.com/en/star_list.php) to view all stars.
 
 ## OneJAV {#onejav}
 
-:::tip 提示
+:::tip
 
 官方提供的订阅源不支持 BT 下载订阅，地址为 <https://onejav.com/feeds/>
 
@@ -1106,45 +1133,49 @@ See [Directory](https://www.javlibrary.com/en/star_list.php) to view all stars.
 
 ### Category {#pornhub-category}
 
-<Route author="nczitzk" example="/pornhub/category/popular-with-women" path="/pornhub/category/:caty" paramsDesc={['category，see [categories](https://cn.pornhub.com/webmasters/categories)']}/>
+<Route author="nczitzk" example="/pornhub/category/popular-with-women" path="/pornhub/category/:caty" paramsDesc={['category, see [categories](https://www.pornhub.com/webmasters/categories)']} radar="1"/>
 
 ### Keyword Search {#pornhub-keyword-search}
 
-<Route author="nczitzk" example="/pornhub/search/stepsister" path="/pornhub/search/:keyword" paramsDesc={['keyword']}/>
+<Route author="nczitzk" example="/pornhub/search/stepsister" path="/pornhub/search/:keyword" paramsDesc={['keyword']} radar="1"/>
 
 ### Users {#pornhub-users}
 
-<Route author="I2IMk queensferryme" example="/pornhub/users/pornhubmodels" path="/pornhub/:language?/users/:username" paramsDesc={['language, see below', 'username, part of the url e.g. `pornhub.com/users/pornhubmodels`']} />
+<Route author="I2IMk queensferryme" example="/pornhub/users/pornhubmodels" path="/pornhub/:language?/users/:username" paramsDesc={['language, see below', 'username, part of the url e.g. `pornhub.com/users/pornhubmodels`']} radar="1"/>
 
-### Verified amateur / Model {#pornhub-verified-amateur-%2F-model}
+### Verified amateur / Model {#pornhub-verified-amateur-model}
 
-<Route author="I2IMk queensferryme" example="/pornhub/model/stacy-starando" path="/pornhub/:language?/model/:username/:sort?" paramsDesc={['language, see below', 'username, part of the url e.g. `pornhub.com/model/stacy-starando`', 'sorting method, see below']} />
+<Route author="I2IMk queensferryme" example="/pornhub/model/stacy-starando" path="/pornhub/:language?/model/:username/:sort?" paramsDesc={['language, see below', 'username, part of the url e.g. `pornhub.com/model/stacy-starando`', 'sorting method, see below']} radar="1"/>
 
-### Verified model / Pornstar {#pornhub-verified-model-%2F-pornstar}
+### Verified model / Pornstar {#pornhub-verified-model-pornstar}
 
-<Route author="I2IMk queensferryme" example="/pornhub/pornstar/june-liu" path="/pornhub/:language?/pornstar/:username/:sort?" paramsDesc={['language, see below', 'username, part of the url e.g. `pornhub.com/pornstar/june-liu`', 'sorting method, see below']} />
+<Route author="I2IMk queensferryme" example="/pornhub/pornstar/june-liu" path="/pornhub/:language?/pornstar/:username/:sort?" paramsDesc={['language, see below', 'username, part of the url e.g. `pornhub.com/pornstar/june-liu`', 'sorting method, see below']} radar="1">
 
 **`sort`**
 
-| mr          | mv          | tr        | lg      | cm     |
-| ----------- | ----------- | --------- | ------- | ------ |
-| Most Recent | Most Viewed | Top Rated | Longest | Newest |
+| Most Recent | Most Viewed | Top Rated | Longest | Best |
+| ----------- | ----------- | --------- | ------- | ---- |
+| mr          | mv          | tr        | lg      |      |
+
+</Route>
 
 ### Video List {#pornhub-video-list}
 
-<Route author="I2IMk queensferryme" example="/pornhub/category_url/video%3Fc%3D15%26o%3Dmv%26t%3Dw%26cc%3Djp" path="/pornhub/:language?/category_url/:url?" paramsDesc={['language, see below', 'relative path after `pornhub.com/`, need to be URL encoded']}/>
+<Route author="I2IMk queensferryme" example="/pornhub/category_url/video%3Fc%3D15%26o%3Dmv%26t%3Dw%26cc%3Djp" path="/pornhub/:language?/category_url/:url?" paramsDesc={['language, see below', 'relative path after `pornhub.com/`, need to be URL encoded']}>
 
 **`language`**
 
 Refer to [Pornhub F.A.Qs](https://help.pornhub.com/hc/en-us/articles/360044327034-How-do-I-change-the-language-), English by default. For example:
 
--   `cn` (Chinese), for Pornhub in China <https://cn.pornhub.com/>；
+-   `cn` (Chinese), for Pornhub in China <https://cn.pornhub.com>；
 
--   `jp` (Japanese), for Pornhub in Japan <https://jp.pornhub.com/> etc.
+-   `jp` (Japanese), for Pornhub in Japan <https://jp.pornhub.com> etc.
 
-## PRESTIGE(プレステージ 蚊香社) {#prestige(%E3%83%97%E3%83%AC%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8-wen-xiang-she-)}
+</Route>
 
-### シリーズ {#prestige(%E3%83%97%E3%83%AC%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8-wen-xiang-she-)-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA}
+## PRESTIGE(プレステージ 蚊香社) {#prestige-%E3%83%97%E3%83%AC%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8-wen-xiang-she}
+
+### シリーズ {#prestige-%E3%83%97%E3%83%AC%E3%82%B9%E3%83%86%E3%83%BC%E3%82%B8-wen-xiang-she-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA}
 
 <Route author="minimalistrojan" example="/prestige-av/series/847" path="/prestige-av/series/:mid/:sort?" paramsDesc={['Series number', 'Sorting, `near` by default']} puppeteer="1">
 
@@ -1248,7 +1279,7 @@ Refer to [Pornhub F.A.Qs](https://help.pornhub.com/hc/en-us/articles/36004432703
 
 ## The Movie Database {#the-movie-database}
 
-:::tip Tips
+:::tip
 
 Refer to <https://developers.themoviedb.org/3/getting-started/languages> for the language parameter in the route.
 
@@ -1342,15 +1373,17 @@ When `mediaType` is `movie`, `sheet` should be:
 
 <Route author="TonyRL" example="/iqiyi/album/神武天尊-2020-1b4lufwxd7h" path="/iqiyi/album/:id" paramsDesc={['剧集 id, 可在该主页 URL 中找到']} radar="1">
 
-:::tip 提示
+:::tip
+
 可抓取內容根据服务器所在地区而定
+
 :::
 
 </Route>
 
 ## 哔嘀影视 {#bi-di-ying-shi}
 
-:::tip 提示
+:::tip
 
 哔嘀影视有多个备用域名，路由默认使用域名 <https://bdys01.com>。若该域名无法访问，可以通过在路由最后加上 `?domain=<域名>` 指定路由访问的域名。如指定备用域名为 <https://bde4.icu>，则在所有哔嘀影视路由最后加上 `?domain=bde4.icu` 即可，此时路由为 [`/bdys?domain=bde4.icu`](https://rsshub.app/bdys?domain=bde4.icu)
 
@@ -1360,13 +1393,13 @@ When `mediaType` is `movie`, `sheet` should be:
 
 <Route author="nczitzk" example="/bdys" path="/bdys/:caty?/:type?/:area?/:year?/:order?" paramsDesc={['影视类型，见下表，默认为 `all` 即不限','资源分类，见下表，默认为 `all` 即不限', '制片地区，见下表，默认为 `all` 即不限','上映时间，此处填写年份不小于2000，默认为 `all` 即不限','影视排序，见下表，默认为更新时间']} anticrawler="1" radar="1">
 
-#### 资源分类
+#### 资源分类 {#bi-di-ying-shi-shou-ye-zi-yuan-fen-lei}
 
 | 不限 | 电影 | 电视剧 |
 | ---- | ---- | ------ |
 | all  | 0    | 1      |
 
-#### 影视类型
+#### 影视类型 {#bi-di-ying-shi-shou-ye-ying-shi-lei-xing}
 
 | 不限 | 动作    | 爱情   | 喜剧 | 科幻   | 恐怖   |
 | ---- | ------- | ------ | ---- | ------ | ------ |
@@ -1400,7 +1433,7 @@ When `mediaType` is `movie`, `sheet` should be:
 | --------- | ---- | ---- |
 | gangtaiju | faju | aoju |
 
-#### 制片地区
+#### 制片地区 {#bi-di-ying-shi-shou-ye-zhi-pian-di-qu}
 
 | 大陆 | 中国香港 | 中国台湾 |
 | ---- | -------- | -------- |
@@ -1414,7 +1447,7 @@ When `mediaType` is `movie`, `sheet` should be:
 | 比利时 | 瑞典 | 荷兰 | 丹麦 | 加拿大 | 俄罗斯 |
 | ------ | ---- | ---- | ---- | ------ | ------ |
 
-#### 影视排序
+#### 影视排序 {#bi-di-ying-shi-shou-ye-ying-shi-pai-xu}
 
 | 更新时间 | 豆瓣评分 |
 | -------- | -------- |
@@ -1448,7 +1481,7 @@ When `mediaType` is `movie`, `sheet` should be:
 
 <Route author="cnzgray" example="/t66y/post/3286088" path="/t66y/post/:tid" paramsDesc={['帖子 id, 可在帖子 URL 中找到']} anticrawler="1">
 
-:::tip 提示
+:::tip
 
 帖子 id 查找办法:
 
@@ -1520,7 +1553,15 @@ When `mediaType` is `movie`, `sheet` should be:
 
 ### 滚动新闻 {#fa-guo-guo-ji-guang-bo-dian-tai-gun-dong-xin-wen}
 
-<Route author="nczitzk" example="/rfi/news" path="/rfi/news"/>
+<Route author="nczitzk" example="/rfi/news" path="/rfi/news/:lang?" paramsDesc={['语言，默认为cn']}>
+
+**lang**
+
+| en | cn | fr |
+| --- | --- | --- |
+| 英文 | 中文 | 法文 |
+
+</Route>
 
 ## 高清电台 {#gao-qing-dian-tai}
 
@@ -1552,7 +1593,7 @@ When `mediaType` is `movie`, `sheet` should be:
 
 ## 猫耳 FM {#mao-er-fm}
 
-### 广播剧 / 有声漫画 {#mao-er-fm-guang-bo-ju-%2F-you-sheng-man-hua}
+### 广播剧 / 有声漫画 {#mao-er-fm-guang-bo-ju-you-sheng-man-hua}
 
 <Route author="FlashWingShadow" example="/missevan/drama/28499" path="/missevan/drama/:id" paramsDesc={['剧集 id，在剧集主页 URL 中可以找到']}/>
 
@@ -1570,7 +1611,7 @@ When `mediaType` is `movie`, `sheet` should be:
 
 <Route author="HenryQW" example="/maoyan/upcoming" path="/maoyan/upcoming" />
 
-### 正在热映 - 完整版 {#mao-yan-dian-ying-zheng-zai-re-ying---wan-zheng-ban}
+### 正在热映 - 完整版 {#mao-yan-dian-ying-zheng-zai-re-ying-wan-zheng-ban}
 
 <Route author="song-zhou" example="/maoyan/hotComplete" path="/maoyan/hotComplete/:orderby?/:ascOrDesc?/:top?" paramsDesc={['排序条件，(score: 评分,pubDate: 发布时间),', '正序或倒序 (asc: 正序, desc: 倒序) 默认倒序', '取前多少条，默认取所有']}/>
 
@@ -1586,9 +1627,9 @@ When `mediaType` is `movie`, `sheet` should be:
 
 </Route>
 
-## 柠檬 私房歌 (ningmeng.name) {#ning-meng-si-fang-ge-(ningmeng.name)}
+## 柠檬 私房歌 (ningmeng.name) {#ning-meng-si-fang-ge-ningmeng.name}
 
-### 私房歌 {#ning-meng-si-fang-ge-(ningmeng.name)-si-fang-ge}
+### 私房歌 {#ning-meng-si-fang-ge-ningmeng.name-si-fang-ge}
 
 <Route author="dearrrfish" example="/ningmeng/song" path="/ningmeng/song" />
 
@@ -1740,9 +1781,10 @@ When `mediaType` is `movie`, `sheet` should be:
 
 ## 网易云音乐 {#wang-yi-yun-yin-yue}
 
-:::tip 部分歌单及听歌排行信息为登陆后可见
+:::tip
 
 部分歌单及听歌排行信息为登陆后可见，自建时将环境变量`NCM_COOKIES`设为登陆后的 Cookie 值，即可正常获取。
+
 :::
 
 ### 歌单歌曲 {#wang-yi-yun-yin-yue-ge-dan-ge-qu}
@@ -1787,21 +1829,23 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 ## 喜马拉雅 {#xi-ma-la-ya}
 
-### 专辑（不输出 ShowNote） {#xi-ma-la-ya-zhuan-ji-%EF%BC%88-bu-shu-chu-shownote%EF%BC%89}
+### 专辑（不输出 ShowNote） {#xi-ma-la-ya-zhuan-ji-bu-shu-chu-shownote}
 
 <Route author="lengthmin jjeejj prnake" example="/ximalaya/album/299146" path="/ximalaya/:type/:id/:all?" paramsDesc={['专辑类型, 通常可以使用 `album`，可在对应专辑页面的 URL 中找到','专辑 id, 可在对应专辑页面的 URL 中找到','是否需要获取全部节目，填入 `1`、`true`、`all` 视为获取所有节目，填入其他则不获取。']} supportPodcast="1" radar="1" rssbud="1" selfhost="1">
 
 目前喜马拉雅的 API 只能一集一集的获取各节目上的 ShowNote，会极大的占用系统资源，所以默认为不获取节目的 ShowNote。下方有一个新的路径可选获取 ShowNote。
 
-:::caution 注意
+:::caution
+
 专辑类型即 url 中的分类拼音，使用通用分类 `album` 通常是可行的，专辑 id 是跟在**分类拼音**后的那个 id, 不要输成某集的 id 了
 
 **付费内容需要配置好已购买账户的 token 才能收听，详情见部署页面的配置模块**
+
 :::
 
 </Route>
 
-### 专辑（输出 ShowNote） {#xi-ma-la-ya-zhuan-ji-%EF%BC%88-shu-chu-shownote%EF%BC%89}
+### 专辑（输出 ShowNote） {#xi-ma-la-ya-zhuan-ji-shu-chu-shownote}
 
 <Route author="lengthmin jjeejj prnake" example="/ximalaya/album/39488639/0/shownote" path="/ximalaya/:type/:id/:all/:shownote?" paramsDesc={['专辑类型, 通常可以使用 `album`，可在对应专辑页面的 URL 中找到','专辑 id, 可在对应专辑页面的 URL 中找到','是否需要获取全部节目，填入 `1`、`true`、`all` 视为获取所有节目，填入其他则不获取。', '是否需要获取节目的 ShowNote，填入 `1`、`true`,`shownote` 视为获取，填入其他则不获取。']} supportPodcast="1" selfhost="1">
 
@@ -1813,7 +1857,7 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 <Route author="prnake" example="/xiaoyuzhou" path="/xiaoyuzhou" selfhost="1">
 
-:::caution 注意
+:::caution
 
 小宇宙的 api 需要验证 `x-jike-device-id`、`x-jike-access-token` 和 `x-jike-refresh-token` 。必要时需要自行配置，具体见部署文档。
 
@@ -1841,7 +1885,7 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 所以对应路由为 [`/radio/album/15682090498666`](https://rsshub.app/radio/album/15682090498666)
 
-:::tip 提示
+:::tip
 
 部分专辑不适用该路由，此时可以尝试 [节目](#yun-ting-jie-mu) 路由
 
@@ -1857,7 +1901,7 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 所以对应路由为 [`/radio/1552135`](https://rsshub.app/radio/1552135)
 
-:::tip 提示
+:::tip
 
 该路由仅适用于更新时间较早的电台节目，如 [共和国追梦人](http://www.radio.cn/pc-portal/sanji/detail.html?columnId=1552135)
 
@@ -1875,7 +1919,7 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 所以对应路由为 [`/radio/zhibo/1395528`](https://rsshub.app/radio/zhibo/1395528)
 
-:::tip 提示
+:::tip
 
 查看更多电台直播节目，可前往 [电台直播](http://www.radio.cn/pc-portal/erji/radioStation.html)
 
@@ -1907,7 +1951,7 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 ## 中文播客榜 {#zhong-wen-bo-ke-bang}
 
-:::tip 提示
+:::tip
 
 可以通过指定 `limit` 参数确定榜单排名下限，默认为 250。
 
@@ -1959,11 +2003,11 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 </Route>
 
-## 字幕组（ZiMuZu.tv） {#zi-mu-zu-%EF%BC%88zimuzu.tv%EF%BC%89}
+## 字幕组（ZiMuZu.tv） {#zi-mu-zu-zimuzu.tv}
 
-### 影视 {#zi-mu-zu-%EF%BC%88zimuzu.tv%EF%BC%89-ying-shi}
+### 影视 {#zi-mu-zu-zimuzu.tv-ying-shi}
 
-:::tip 提示
+:::tip
 
 跟官方提供的 RSS 相比：官方使用了不规范的 magnet 字段，无法被 BT 客户端识别并自动下载，其他数据相同
 
@@ -1971,7 +2015,7 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 <Route author="DIYgod" example="/zimuzu/resource/37031" path="/zimuzu/resource/:id?" paramsDesc={['影视 id，对应影视的 URL 中找到，为空时输出最近更新']} supportBT="1"/>
 
-### 排行榜 {#zi-mu-zu-%EF%BC%88zimuzu.tv%EF%BC%89-pai-hang-bang}
+### 排行榜 {#zi-mu-zu-zimuzu.tv-pai-hang-bang}
 
 <Route author="queensferryme DIYgod" example="/zimuzu/top/week/movie" path="/zimuzu/top/:range/:type" paramsDesc={['时间范围, 可以是 `week` `month` `year` `total`', '排行类型, 可以是 `fav` `tv` `movie`']}>
 

@@ -1,5 +1,3 @@
-import Route from '@site/src/components/Route';
-
 # 🔬 Scientific Journal
 
 ## Academy of Management {#academy-of-management}
@@ -37,7 +35,7 @@ Return results from 2020
 
 <Route author="nczitzk" example="/acs/journal/jacsat" path="/aom/journal/:id" paramsDesc={['Journal id, can be found in URL']} supportScihub="1">
 
-:::tip Tip
+:::tip
 
 See [Browse Content](https://pubs.acs.org)
 
@@ -53,7 +51,7 @@ See [Browse Content](https://pubs.acs.org)
 
 The URL of the journal [American Economic Review](https://www.aeaweb.org/journals/aer) is `https://www.aeaweb.org/journals/aer`, where `aer` is the id of the journal, so the route for this journal is `/aeaweb/aer`.
 
-:::tip Tip
+:::tip
 
 More jounals can be found in [AEA Journals](https://www.aeaweb.org/journals).
 
@@ -69,7 +67,7 @@ More jounals can be found in [AEA Journals](https://www.aeaweb.org/journals).
 
 Refer to the URL format `pubs.aip.org/:pub/:jrn`
 
-:::tip Tip
+:::tip
 
 More jounals can be found in [AIP Publications](https://publishing.aip.org/publications/find-the-right-journal).
 
@@ -85,7 +83,7 @@ More jounals can be found in [AIP Publications](https://publishing.aip.org/publi
 
 The URL of the journal [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) is `https://www.annualreviews.org/journal/anchem`, where `anchem` is the id of the journal, so the route for this journal is `/annualreviews/anchem`.
 
-:::tip Tip
+:::tip
 
 More jounals can be found in [Browse Journals](https://www.annualreviews.org/action/showPublications).
 
@@ -164,7 +162,7 @@ Including 'cell', 'cancer-cell', 'cell-chemical-biology', 'cell-host-microbe', '
 
 ## elife {#elife}
 
-### Latest Research - Research by Subject {#elife-latest-research---research-by-subject}
+### Latest Research - Research by Subject {#elife-latest-research-research-by-subject}
 
 <Route author="emdoe" example="/elife/cell-biology" path="/elife/:subject" paramsDesc={['topic name', 'obtain it from the homepage. `latest` will include all topics.']} supportScihub="1"/>
 
@@ -230,7 +228,7 @@ Return results from 2020
 
 <Route author="Derekmini auto-bot-ty" example="/ieee/journal/70" path="/ieee/journal/:journal/:sortType?" paramsDesc={['Journal code, the number of the `punumber` in the URL','Sort Type, default: `vol-only-seq`, the part of the URL after `sortType`']} radar="1" rssbud="1"/>
 
-### Journal (Papers within the recent 2 months) {#ieee-xplore-journal-(papers-within-the-recent-2-months)}
+### Journal (Papers within the recent 2 months) {#ieee-xplore-journal-papers-within-the-recent-2-months}
 
 <Route author="Derekmini auto-bot-ty" example="/ieee/journal/78/recent" path="/ieee/journal/:journal/recent/:sortType?" paramsDesc={['Journal code, the number of the `punumber` in the URL','Sort Type, default: `vol-only-seq`, the part of the URL after `sortType`']} radar="1" rssbud="1"/>
 
@@ -288,7 +286,7 @@ Papers that are published in this week.
 
 ## Nature Journal {#nature-journal}
 
-:::tip Tips
+:::tip
 
 You can get all short name of a journal from <https://www.nature.com/siteindex> or [Journal List](#nature-journal-journal-list).
 
@@ -317,7 +315,7 @@ You can get all short name of a journal from <https://www.nature.com/siteindex> 
 
 </Route>
 
-### News & Comment {#nature-journal-news-%26-comment}
+### News & Comment {#nature-journal-news-comment}
 
 <Route author="y9c TonyRL" example="/nature/news-and-comment/ng" path="/nature/news-and-comment/:journal" paramsDesc={['short name for a journal']} supportScihub="1" radar="1" rssbud="1">
 
@@ -353,7 +351,7 @@ Subscribe to the cover images of the Nature journals, and get the latest publica
 
 <Route author="y9c TonyRL" example="/nature/highlight" path="/nature/highlight/:journal?" paramsDesc={['short name for a journal, `nature` by default']} supportScihub="1" radar="1" rssbud="1">
 
-:::caution Warning
+:::caution
 
 Only some journals are supported.
 
@@ -365,9 +363,9 @@ Only some journals are supported.
 
 <Route author="TonyRL" example="/nature/siteindex" path="/nature/siteindex"/>
 
-## Network and Distributed System Security (NDSS) Symposium {#network-and-distributed-system-security-(ndss)-symposium}
+## Network and Distributed System Security (NDSS) Symposium {#network-and-distributed-system-security-ndss-symposium}
 
-### Accepted papers {#network-and-distributed-system-security-(ndss)-symposium-accepted-papers}
+### Accepted papers {#network-and-distributed-system-security-ndss-symposium-accepted-papers}
 
 <Route author="ZeddYu" example="/ndss-symposium/ndss" path="/ndss-symposium/ndss">
 
@@ -379,7 +377,7 @@ Return results from 2020
 
 ### Oxford Academic {#oxford-university-press-oxford-academic}
 
-#### Journal
+#### Journal {#oxford-university-press-oxford-academic-journal}
 
 <Route author="Fatpandac" example="/oup/journals/adaptation" path="/oup/journals/:name" paramsDesc={['short name for a journal, can be found in URL']} anticrawler="1"/>
 
@@ -389,8 +387,10 @@ Return results from 2020
 
 <Route author="emdoe HenryQW y9c" example="/pnas/latest" path="/pnas/:topicPath*" paramsDesc={['Topic path, support **Featured Topics**, **Articles By Topic** and [**Collected Papers**](https://www.pnas.org/about/collected-papers), `latest` by default']} radar="1" anticrawler="1" puppeteer="1" supportScihub="1">
 
-:::tip Tips
+:::tip
+
 Some topics require adding `topic/` to `topicPath` like [`/pnas/topic/app-math`](https://rsshub.app/pnas/topic/app-math) and some don't like [`/pnas/biophysics-and-computational-biology`](https://rsshub.app/pnas/biophysics-and-computational-biology)
+
 :::
 
 </Route>
@@ -401,13 +401,31 @@ Some topics require adding `topic/` to `topicPath` like [`/pnas/topic/app-math`]
 
 <Route author="y9c nczitzk" example="/pubmed/trending" path="/pubmed/trending/:filter?" paramsDesc={['Filters, can be found in URL']} supportScihub="1">
 
-:::tip Tip
+:::tip
 
 For the parameter **filter**, the `filter` parameter in the URL should be split into a string by `,`, here is an example.
 
 In <https://pubmed.ncbi.nlm.nih.gov/trending/?filter=simsearch1.fha&filter=pubt.clinicaltrial&filter=pubt.randomizedcontrolledtrial>, the filter parameters are `simsearch1.fha`, `pubt.clinicaltrial`, and `pubt.randomizedcontrolledtrial`. Therefore, the filter corresponding to the route should be filled with `simsearch1.fha,pubt.clinicaltrial,pubt.randomizedcontrolledtrial`, and the route is [`/pubmed/trending/simsearch1.fha,pubt .clinicaltrial,pubt.randomizedcontrolledtrial`](https://rsshub.app/pubmed/trending/simsearch1.fha,pubt.clinicaltrial,pubt.randomizedcontrolledtrial)
 
 :::
+
+</Route>
+
+## Royal Society of Chemistry {#royal-society-of-chemistry}
+
+### Journal {#royal-society-of-chemistry-journal}
+
+<Route author="nczitzk" example="/rsc/journal/ta" path="/rsc/journal/:id/:category?" paramsDesc={['Journal id, can be found in URL', 'Category, see below, All Recent Articles by default']} radar="1" rssbud="1">
+
+:::tip
+
+All journals at [Current journals](https://pubs.rsc.org/en/journals)
+
+:::
+
+| All Recent Articles | Advance Articles |
+| ------------------- | ---------------- |
+| allrecentarticles   | advancearticles  |
 
 </Route>
 
@@ -491,7 +509,7 @@ Category
 | -------- | --------- | --------- | ------- | -- | ------------------ |
 | mobile   | internet  | boardcast | general | it | industry-resources |
 
-:::tip Tips
+:::tip
 
 If `country` or `type` includes empty space, use `-` instead. For example, `United States` needs to be replaced with `United-States`, `White paper` needs to be replaced with `White-paper`
 
@@ -519,9 +537,9 @@ Date selection
 
 </Route>
 
-## The University of Chicago Press: Journals {#the-university-of-chicago-press%3A-journals}
+## The University of Chicago Press: Journals {#the-university-of-chicago-press-journals}
 
-### Current Issue {#the-university-of-chicago-press%3A-journals-current-issue}
+### Current Issue {#the-university-of-chicago-press-journals-current-issue}
 
 <Route author="TonyRL" example="/uchicago/journals/current/jpe" path="/uchicago/journals/current/:journal" paramsDesc={['Journal id, can be found in URL. [Browse journals by title](https://www.journals.uchicago.edu/action/showPublications)']} radar="1"/>
 
@@ -553,9 +571,9 @@ Return results from 2020
 
 </Route>
 
-## 环球法律评论 {#huan-qiu-fa-l%C3%BC-ping-lun}
+## 环球法律评论 {#huan-qiu-fa-lv-ping-lun}
 
-### 期刊 {#huan-qiu-fa-l%C3%BC-ping-lun-qi-kan}
+### 期刊 {#huan-qiu-fa-lv-ping-lun-qi-kan}
 
 <Route author="nczitzk" example="/globallawreview" path="/globallawreview"/>
 
@@ -571,8 +589,10 @@ Return results from 2020
 
 ### 作者期刊文献 {#zhong-guo-zhi-wang-zuo-zhe-qi-kan-wen-xian}
 
-:::tip 注意
+:::tip
+
 可能仅限中国大陆服务器访问，以实际情况为准。
+
 :::
 
 <Route author="harveyqiu Derekmini" example="/cnki/author/000042423923" path="/cnki/author/:code" paramsDesc={['作者对应code，可以在网址中得到']}/>

@@ -1,5 +1,3 @@
-import Route from '@site/src/components/Route';
-
 # 🖊️️ Blog
 
 ## Amazon {#amazon}
@@ -36,6 +34,12 @@ import Route from '@site/src/components/Route';
 
 <Route author="Jkker" example="/csdn/blog/csdngeeknews" path="/csdn/blog/:user" radar="1" paramsDesc={['`user` is the username of a CSDN blog which can be found in the url of the home page']} />
 
+## Delta Lake {#delta-lake}
+
+### Blogs {#delta-lake-blogs}
+
+<Route author="RengarLee" example="/deltaio/blog" path="/deltaio/blog" radar="1"/>
+
 ## DevolverDigital {#devolverdigital}
 
 ### Official Blogs {#devolverdigital-official-blogs}
@@ -48,8 +52,10 @@ import Route from '@site/src/components/Route';
 
 <Route author="trganda" example="/freebuf/articles/web" path="/freebuf/articles/:type" paramsDesc={['文章类别', '文章id号，可选']}>
 
-:::tip 使用说明
+:::tip
+
 Freebuf 的文章页面带有反爬虫机制，所以目前无法获取文章的完整内容。
+
 :::
 
 </Route>
@@ -82,7 +88,7 @@ Freebuf 的文章页面带有反爬虫机制，所以目前无法获取文章的
 
 <Route author="hnrainll" example="/hashnode/blog/inklings" path="/hashnode/blog/:username" paramsDesc={['博主名称，用户头像 URL 中找到']}>
 
-:::tip 提示
+:::tip
 
 username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。
 
@@ -116,13 +122,13 @@ username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 
 
 <Route author="gkkeys" path="/hexo/fluid/:url" example="/hexo/fluid/blog.tonyzhao.xyz" paramsDesc={['the blog URL without the protocol (http:// and https://)']} selfhost="1"/>
 
-## Hi, DIYgod {#hi%2C-diygod}
+## Hi, DIYgod {#hi-diygod}
 
-### DIYgod 的动森日记 {#hi%2C-diygod-diygod-de-dong-sen-ri-ji}
+### DIYgod 的动森日记 {#hi-diygod-diygod-de-dong-sen-ri-ji}
 
 <Route author="DIYgod" example="/blogs/diygod/animal-crossing" path="/blogs/diygod/animal-crossing"/>
 
-### DIYgod 的可爱的手办们 {#hi%2C-diygod-diygod-de-ke-ai-de-shou-ban-men}
+### DIYgod 的可爱的手办们 {#hi-diygod-diygod-de-ke-ai-de-shou-ban-men}
 
 <Route author="DIYgod" example="/blogs/diygod/gk" path="/blogs/diygod/gk"/>
 
@@ -152,7 +158,7 @@ username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 
 
 ## Love the Problem {#love-the-problem}
 
-### Ash Maurya's blog {#love-the-problem-ash-maurya's-blog}
+### Ash Maurya's blog {#love-the-problem-ash-maurya-s-blog}
 
 <Route author="james-tindal" example="/ash-maurya" path="/ash-maurya"/>
 
@@ -168,9 +174,9 @@ username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 
 
 <Route author="ImSingee" example="/medium/list/imsingee/f2d8d48096a9" path="/medium/list/:user/:catalogId" paramsDesc={['Username', 'List ID']}>
 
-The List ID is the last part of the URL after `-`, for example, the username in "https://medium.com/@imsingee/list/collection-7e67004f23f9" is `imsingee`, and the ID is `7e67004f23f9`.
+The List ID is the last part of the URL after `-`, for example, the username in <https://medium.com/@imsingee/list/collection-7e67004f23f9> is `imsingee`, and the ID is `7e67004f23f9`.
 
-:::caution Note
+:::caution
 
 To access private lists, only self-hosting is supported.
 
@@ -178,11 +184,11 @@ To access private lists, only self-hosting is supported.
 
 </Route>
 
-### Personalized Recommendations - For You {#medium-personalized-recommendations---for-you}
+### Personalized Recommendations - For You {#medium-personalized-recommendations-for-you}
 
 <Route author="ImSingee" example="/medium/for-you/imsingee" path="/medium/for-you/:user" paramsDesc={['Username']} selfhost="1">
 
-:::caution Note
+:::caution
 
 Personalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.
 
@@ -190,11 +196,11 @@ Personalized recommendations require the cookie value after logging in, so only 
 
 </Route>
 
-### Personalized Recommendations - Following {#medium-personalized-recommendations---following}
+### Personalized Recommendations - Following {#medium-personalized-recommendations-following}
 
 <Route author="ImSingee" example="/medium/following/imsingee" path="/medium/following/:user" paramsDesc={['Username']} selfhost="1">
 
-:::caution Note
+:::caution
 
 Personalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.
 
@@ -202,13 +208,13 @@ Personalized recommendations require the cookie value after logging in, so only 
 
 </Route>
 
-### Personalized Recommendations - Tag {#medium-personalized-recommendations---tag}
+### Personalized Recommendations - Tag {#medium-personalized-recommendations-tag}
 
 <Route author="ImSingee" example="/medium/tag/imsingee/cybersecurity" path="/medium/tag/:user/:tag" paramsDesc={['Username', 'Subscribed Tag']} selfhost="1">
 
 There are many tags, which can be obtained by clicking on a tag from the homepage and looking at the URL. For example, if the URL is `https://medium.com/?tag=web3`, then the tag is `web3`.
 
-:::caution Note
+:::caution
 
 Personalized recommendations require the cookie value after logging in, so only self-hosting is supported. See the configuration module on the deployment page for details.
 
@@ -391,13 +397,13 @@ Limit the number of entries to be retrieved by adding `?limit=x` to the end of t
 
 <Route author="changlan" example="/blogs/jianning" path="/blogs/jianning" radar="1" rssbud="1"/>
 
-## 劍心．回憶 {#jian-xin-%EF%BC%8E-hui-yi}
+## 劍心．回憶 {#jian-xin-hui-yi}
 
-### 分类 {#jian-xin-%EF%BC%8E-hui-yi-fen-lei}
+### 分类 {#jian-xin-hui-yi-fen-lei}
 
 <Route author="nczitzk" example="/kenshin" path="/kenshin/:category?/:type?" paramsDesc={['分类，见下表，默认为首页', '子分类，见下表，默认为首页']}>
 
-:::tip 提示
+:::tip
 
 如 `藝能新聞` 的 `日劇新聞` 分类，路由为 `/jnews/news_drama`
 
@@ -465,9 +471,15 @@ Limit the number of entries to be retrieved by adding `?limit=x` to the end of t
 
 ## 十年之约 {#shi-nian-zhi-yue}
 
-### 专题展示 - 文章 {#shi-nian-zhi-yue-zhuan-ti-zhan-shi---wen-zhang}
+### 专题展示 - 文章 {#shi-nian-zhi-yue-zhuan-ti-zhan-shi-wen-zhang}
 
 <Route author="7Wate a180285" example="/foreverblog/feeds" path="/foreverblog/feeds" radar="1" rssbud="1" />
+
+## 土猛的员外 {#tu-meng-de-yuan-wai}
+
+### 文章 {#tu-meng-de-yuan-wai-wen-zhang}
+
+<Route author="Levix" example="/luxiangdong/archive" path="/luxiangdong/archive"/>
 
 ## 王五四文集 {#wang-wu-si-wen-ji}
 
@@ -515,7 +527,7 @@ Limit the number of entries to be retrieved by adding `?limit=x` to the end of t
 
 <Route author="naixy28" example="/zhubai/via" path="/zhubai/:id"  paramsDesc={['`id` 为竹白主页 url 中的三级域名，如 via.zhubai.love 的 `id` 为 `via`']}>
 
-:::tip 提示
+:::tip
 
 在路由末尾处加上 `?limit=限制获取数目` 来限制获取条目数量，默认值为`20`
 
@@ -526,4 +538,3 @@ Limit the number of entries to be retrieved by adding `?limit=x` to the end of t
 ### TOP 20 {#zhu-bai-top-20}
 
 <Route author="nczitzk" example="/zhubai/top20" path="/zhubai/top20"/>
-

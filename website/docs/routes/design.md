@@ -1,5 +1,3 @@
-import Route from '@site/src/components/Route';
-
 # 🎨️ Design
 
 ## Axis Studios {#axis-studios}
@@ -38,7 +36,7 @@ Behance user's profile URL, like <https://www.behance.net/mishapetrick> the user
 
 ## Digic Picture {#digic-picture}
 
-### Works & News {#digic-picture-works-%26-news}
+### Works & News {#digic-picture-works-news}
 
 <Route author="MisteryMonster" example="/digic-pictures/works/real-time-engine" path="/digic-pictures/:menu/:tag?" paramsDesc={['`news`, `works`', 'Under WORK types: `/game-cinematics`, `/feature`, `/making-of`, `/commercials-vfx`, `/real-time-engine`']} />
 
@@ -48,7 +46,7 @@ Behance user's profile URL, like <https://www.behance.net/mishapetrick> the user
 
 <Route path="/dribbble/popular/:timeframe?" example="/dribbble/popular" paramsDesc={['support the following values: week, month, year and ever']} />
 
-### User (or team) {#dribbble-user-(or-team)}
+### User (or team) {#dribbble-user-or-team}
 
 <Route path="/dribbble/user/:name" example="/dribbble/user/google" paramsDesc={['username, available in user\'s homepage URL']} />
 
@@ -237,7 +235,7 @@ Default is under 'https://www.methodstudios.com/en/features'.
 
 ## 站酷 {#zhan-ku}
 
-### 发现（+ 推荐预设） {#zhan-ku-fa-xian-%EF%BC%88%2B-tui-jian-yu-she-%EF%BC%89}
+### 发现（+ 推荐预设） {#zhan-ku-fa-xian-tui-jian-yu-she}
 
 <Route author="junbaor nczitzk" example="/zcool/discover/all" path="/zcool/discover/:type?" paramsDesc={['预设参数，见下表']} radar="1" rssbud="1">
 
@@ -249,7 +247,7 @@ Default is under 'https://www.methodstudios.com/en/features'.
 
 </Route>
 
-### 发现（+ 查询参数） {#zhan-ku-fa-xian-%EF%BC%88%2B-cha-xun-can-shu-%EF%BC%89}
+### 发现（+ 查询参数） {#zhan-ku-fa-xian-cha-xun-can-shu}
 
 <Route author="nczitzk" example="/zcool/discover/cate=0&subCate=0" path="/zcool/discover/:query?" paramsDesc={['查询参数']} radar="1" rssbud="1">
 
@@ -275,7 +273,7 @@ Default is under 'https://www.methodstudios.com/en/features'.
 
 在 **精选** 分类下的 **运营设计** 子分类全部内容基础上，筛选出有 **视频**，且城市选择 **北京**，可直接使用路由 [`/zcool/discover/0/617/1/北京`](https://rsshub.app/zcool/discover/0/617/1/北京)
 
-:::tip 提示
+:::tip 
 
 下方仅提供 **分类及其子分类** 参数的代码。**学校** 参数的代码可以在 [站酷发现页](https://www.zcool.com.cn/discover) 中选择跳转后，从浏览器地址栏中找到。
 

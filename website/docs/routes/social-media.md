@@ -1,5 +1,3 @@
-import Route from '@site/src/components/Route';
-
 # 💬 Social Media
 
 ## 755 {#755}
@@ -44,7 +42,26 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 ### UP 主动态 {#bilibili-up-zhu-dong-tai}
 
-<Route author="DIYgod zytomorrow" example="/bilibili/user/dynamic/2267573" path="/bilibili/user/dynamic/:uid/:showEmoji?/:disableEmbed?" paramsDesc={['用户 id, 可在 UP 主主页中找到', '显示或隐藏表情图片，默认值为 0 隐藏，其他值为显示', '默认为开启内嵌视频, 任意值为关闭']} radar="1" rssbud="1"/>
+<Route author="DIYgod zytomorrow CaoMeiYouRen JimenezLi" example="/bilibili/user/dynamic/2267573" path="/bilibili/user/dynamic/:uid/:routeParams?" paramsDesc={['用户 id, 可在 UP 主主页中找到', '额外参数；请参阅以下说明和表格']} radar="1" rssbud="1">
+
+| 键 | 含义 | 接受的值 | 默认值 |
+| -- | ---- | ------- | ------ |
+| showEmoji | 显示或隐藏表情图片 | 0/1/true/false | false |
+| disableEmbed | 关闭内嵌视频 | 0/1/true/false | false |
+| useAvid | 视频链接使用AV号(默认为BV号) | 0/1/true/false | false |
+| directLink | 使用内容直链 | 0/1/true/false | false |
+
+用例：`/bilibili/user/dynamic/2267573/showEmoji=1&disableEmbed=1&useAvid=1`
+
+:::tip 动态的专栏显示全文
+
+动态的专栏显示全文请使用通用参数里的 `mode=fulltext `
+
+举例: bilibili 专栏全文输出 /bilibili/user/dynamic/2267573/?mode=fulltext
+
+:::
+
+</Route>
 
 ### UP 主频道的合集 {#bilibili-up-zhu-pin-dao-de-he-ji}
 
@@ -70,7 +87,7 @@ Tiny Tiny RSS 会给所有 iframe 元素添加 `sandbox="allow-scripts"` 属性�
 
 <Route author="Qixingchen" example="/bilibili/user/followers/2267573/3" path="/bilibili/user/followers/:uid/:loginUid" paramsDesc={['用户 id, 可在 UP 主主页中找到','用于登入的用户id,需要配置对应的 Cookie 值']} radar="1" rssbud="1" selfhost="1">
 
-:::caution 注意
+:::caution
 
 UP 主粉丝现在需要 b 站登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
 
@@ -82,7 +99,7 @@ UP 主粉丝现在需要 b 站登录后的 Cookie 值，所以只能自建，详
 
 <Route author="Qixingchen" example="/bilibili/user/followings/2267573/3" path="/bilibili/user/followings/:uid/:loginUid" paramsDesc={['用户 id, 可在 UP 主主页中找到','用于登入的用户id,需要配置对应的 Cookie 值']} radar="1" rssbud="1" selfhost="1">
 
-:::caution 注意
+:::caution
 
 UP 主关注用户现在需要 b 站登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
 
@@ -248,9 +265,9 @@ UP 主关注用户现在需要 b 站登录后的 Cookie 值，所以只能自建
 
 ### 用户关注动态 {#bilibili-yong-hu-guan-zhu-dong-tai}
 
-<Route author="TigerCubDen" example="/bilibili/followings/dynamic/109937383" path="/bilibili/followings/dynamic/:uid/:showEmoji?/:disableEmbed?" paramsDesc={['用户 id', '显示或隐藏表情图片，默认值为 0 隐藏，其他值为显示', '默认为开启内嵌视频, 任意值为关闭']} selfhost="1">
+<Route author="TigerCubDen JimenezLi" example="/bilibili/followings/dynamic/109937383" path="/bilibili/followings/dynamic/:uid/:routeParams?" paramsDesc={['用户 id', '额外参数；请参阅 [#UP 主动态](#bilibili-up-zhu-dong-tai) 的说明和表格']} selfhost="1">
 
-:::caution 注意
+:::caution
 
 用户动态需要 b 站登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
 
@@ -262,7 +279,7 @@ UP 主关注用户现在需要 b 站登录后的 Cookie 值，所以只能自建
 
 <Route author="LogicJake" example="/bilibili/followings/video/2267573" path="/bilibili/followings/video/:uid/:disableEmbed?" paramsDesc={['用户 id', '默认为开启内嵌视频, 任意值为关闭']} selfhost="1">
 
-:::caution 注意
+:::caution
 
 用户动态需要 b 站登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
 
@@ -274,9 +291,21 @@ UP 主关注用户现在需要 b 站登录后的 Cookie 值，所以只能自建
 
 <Route author="woshiluo" example="/bilibili/followings/article/99800931" path="/bilibili/followings/article/:uid" paramsDesc={['用户 id']} selfhost="1">
 
-:::caution 注意
+:::caution
 
 用户动态需要 b 站登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
+
+:::
+
+</Route>
+
+### 用户稍后再看 {#bilibili-yong-hu-shao-hou-zai-kan}
+
+<Route author="JimenezLi" example="/bilibili/watchlater/2267573" path="/bilibili/watchlater/:uid/:disableEmbed?" paramsDesc={['用户 id', '默认为开启内嵌视频, 任意值为关闭']} selfhost="1">
+
+:::caution
+
+用户稍后再看需要 b 站登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
 
 :::
 
@@ -330,7 +359,7 @@ UP 主关注用户现在需要 b 站登录后的 Cookie 值，所以只能自建
 
 </Route>
 
-### 话题 (频道 / 标签) {#bilibili-hua-ti-(-pin-dao-%2F-biao-qian-)}
+### 话题 (频道 / 标签) {#bilibili-hua-ti-pin-dao-biao-qian}
 
 <Route author="Qixingchen" example="/bilibili/topic/2233" path="/bilibili/topic/:topic" paramsDesc={['话题名(又称频道名或标签) 例如 2233 或 COSPLAY']}/>
 
@@ -354,7 +383,7 @@ UP 主关注用户现在需要 b 站登录后的 Cookie 值，所以只能自建
 
 <Route author="yindaheng98" example="/bilibili/manga/followings/26009" path="/bilibili/manga/followings/:uid/:limits?" paramsDesc={['用户 id', '抓取最近更新前多少本漫画，默认为10']} selfhost="1">
 
-:::caution 注意
+:::caution
 
 用户追漫需要 b 站登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
 
@@ -366,9 +395,9 @@ UP 主关注用户现在需要 b 站登录后的 Cookie 值，所以只能自建
 
 <Route author="3401797899" example="/bilibili/channel/5417/hot" path="/bilibili/channel/:channelid/hot/:disableEmbed?" paramsDesc={['频道id，可在频道链接中找到', '默认为开启内嵌视频, 任意值为关闭']}/>
 
-## Bluesky (bsky) {#bluesky-(bsky)}
+## Bluesky (bsky) {#bluesky-bsky}
 
-### Keywords {#bluesky-(bsky)-keywords}
+### Keywords {#bluesky-bsky-keywords}
 
 <Route author="untitaker" example="/bsky/keyword/hello" path="/bsky/keyword/:keyword" radar="1" rssbud="1" />
 
@@ -476,35 +505,35 @@ Type
 
 <Route author="TigerCubDen" example="/furaffinity/user/tiger-jungle" path="/furaffinity/user/:username" paramsDesc={['Username, can find in userpage']} radar="1"/>
 
-### User's Watching List {#fur-affinity-user's-watching-list}
+### User's Watching List {#fur-affinity-user-s-watching-list}
 
 <Route author="TigerCubDen" example="/furaffinity/watching/okami9312" path="/furaffinity/watching/:username" paramsDesc={['Username, can find in userpage']} radar="1"/>
 
-### User's Watcher List {#fur-affinity-user's-watcher-list}
+### User's Watcher List {#fur-affinity-user-s-watcher-list}
 
 <Route author="TigerCubDen" example="/furaffinity/watchers/malikshadowclaw" path="/furaffinity/watchers/:username" paramsDesc={['Username, can find in userpage']} radar="1"/>
 
-### User's Commission Information {#fur-affinity-user's-commission-information}
+### User's Commission Information {#fur-affinity-user-s-commission-information}
 
 <Route author="TigerCubDen" example="/furaffinity/commissions/flashlioness" path="/furaffinity/commissions/:username" paramsDesc={['Username, can find in userpage']} radar="1"/>
 
-### User's Shouts {#fur-affinity-user's-shouts}
+### User's Shouts {#fur-affinity-user-s-shouts}
 
 <Route author="TigerCubDen" example="/furaffinity/shouts/redodgft" path="/furaffinity/shouts/:username" paramsDesc={['Username, can find in userpage']} radar="1"/>
 
-### User's Journals {#fur-affinity-user's-journals}
+### User's Journals {#fur-affinity-user-s-journals}
 
 <Route author="TigerCubDen" example="/furaffinity/journals/rukis" path="/furaffinity/journals/:username" paramsDesc={['Username, can find in userpage']} radar="1"/>
 
-### User's Gallery {#fur-affinity-user's-gallery}
+### User's Gallery {#fur-affinity-user-s-gallery}
 
 <Route author="TigerCubDen" example="/furaffinity/gallery/flashlioness" path="/furaffinity/gallery/:username/:nsfw?" paramsDesc={['Username, can find in userpage', 'NSFW Mode, do not filter NSFW contents when value set to `1`']} radar="1"/>
 
-### User's Scraps {#fur-affinity-user's-scraps}
+### User's Scraps {#fur-affinity-user-s-scraps}
 
 <Route author="TigerCubDen" example="/furaffinity/scraps/flashlioness" path="/furaffinity/scraps/:username/:nsfw?" paramsDesc={['Username, can find in userpage', 'NSFW Mode, do not filter NSFW contents when value set to `1`']} radar="1"/>
 
-### User's Favorites {#fur-affinity-user's-favorites}
+### User's Favorites {#fur-affinity-user-s-favorites}
 
 <Route author="TigerCubDen" example="/furaffinity/favorites/tiger-jungle" path="/furaffinity/favorites/:username/:nsfw?" paramsDesc={['Username, can find in userpage', 'NSFW Mode, do not filter NSFW contents when value set to `1`']} radar="1"/>
 
@@ -518,7 +547,7 @@ Type
 
 ## Gab {#gab}
 
-### User's Posts {#gab-user's-posts}
+### User's Posts {#gab-user-s-posts}
 
 <Route author="zphw" example="/gab/user/realdonaldtrump" path="/gab/user/:username" paramsDesc={['Username']} />
 
@@ -548,7 +577,7 @@ If you don't want to setup credentials, you can use [Picnob](#picnob) or [Picuki
 
 :::
 
-### User Profile / Hashtag - Private API {#instagram-user-profile-%2F-hashtag---private-api}
+### User Profile / Hashtag - Private API {#instagram-user-profile-hashtag-private-api}
 
 <Route author="oppilate DIYgod" example="/instagram/user/stefaniejoosten" path="/instagram/:category/:key" paramsDesc={['Feed category, see table below','Username / Hashtag name']} radar="1" anticrawler="1" selfhost="1">
 
@@ -556,13 +585,15 @@ If you don't want to setup credentials, you can use [Picnob](#picnob) or [Picuki
 | ------------- | ------- |
 | user          | tags    |
 
-:::tip Tips
+:::tip
+
 It's highly recommended to deploy with Redis cache enabled.
+
 :::
 
 </Route>
 
-### User Profile / Hashtag - Cookie {#instagram-user-profile-%2F-hashtag---cookie}
+### User Profile / Hashtag - Cookie {#instagram-user-profile-hashtag-cookie}
 
 <Route author="TonyRL" example="/instagram/2/user/stefaniejoosten" path="/instagram/2/:category/:key" paramsDesc={['Feed category, see table above','Username / Hashtag name']} radar="1" anticrawler="1" selfhost="1" />
 
@@ -609,19 +640,19 @@ Started from Mastodon v4.0.0, the use of the `search` API in the route no longer
 If the domain of your Webfinger account URI is the same as the API host of the instance (i.e., no delegation called in some other protocols), then no configuration is required and the route is available out of the box.
 However, you can still specify these route-specific configurations if you need to override them.
 
-### Instance timeline (local) {#mastodon-instance-timeline-(local)}
+### Instance timeline (local) {#mastodon-instance-timeline-local}
 
 <Route author="hoilc" example="/mastodon/timeline/pawoo.net/true" path="/mastodon/timeline/:site/:only_media?" paramsDesc={['instance address, only domain, no `http://` or `https://` protocol header', 'whether only display media content, default to false, any value to true']}/>
 
 If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.
 
-### Instance timeline (federated) {#mastodon-instance-timeline-(federated)}
+### Instance timeline (federated) {#mastodon-instance-timeline-federated}
 
 <Route author="hoilc" example="/mastodon/remote/pawoo.net/true" path="/mastodon/remote/:site/:only_media?" paramsDesc={['instance address, only domain, no `http://` or `https://` protocol header', 'whether only display media content, default to false, any value to true']}/>
 
 If the instance address is not `mastodon.social` or `pawoo.net`, then the route requires `ALLOW_USER_SUPPLY_UNSAFE_DOMAIN` to be `true`.
 
-### User timeline (backup) {#mastodon-user-timeline-(backup)}
+### User timeline (backup) {#mastodon-user-timeline-backup}
 
 <Route author="notofoe" example="/mastodon/account_id/mastodon.social/23634/statuses/only_media" path="/mastodon/account/:site/:account_id/statuses/:only_media?" paramsDesc={['instance address, only domain, no `http://` or `https://` protocol header', 'account id. login your instance, then search for the user profile; the account id is in the url', 'whether only display media content, default to false, any value to true']}/>
 
@@ -788,7 +819,7 @@ Only for self-hosted
 
 <Route author="BugWriter2" example="/soul/posts/hot/NXJiSlM5V21kamJWVlgvZUh1NEExdz09" path="/soul/posts/hot/:pid*" paramsDesc={['瞬间 id, 分享用户瞬间时的 URL 的 postIdEcpt 参数']}/>
 
-:::tip 提示
+:::tip
 
 提供不同内容的 `pid`, 可以得到不同的热门瞬间推荐，如果想看多个种类的热门可以用 `/` 把不同的 `pid` 连起来，例如: `NXJiSlM5V21kamJWVlgvZUh1NEExdz09/MkM0amxSTUNiTEpLcHhzSlRzTEI1dz09`
 
@@ -983,6 +1014,7 @@ This route requires Twitter token's corresponding id, therefore it's only availa
 ### User Profile {#vimeo-user-profile}
 
 <Route author="MisteryMonster" example="/vimeo/user/filmsupply/picks" path="/vimeo/user/:username/:cat?" paramsDesc={['In this example [https://vimeo.com/filmsupply](https://vimeo.com/filmsupply)  is `filmsupply`', 'deafult for all latest videos, others categories in this example such as `Docmentary`, `Narrative`, `Drama`. Set `picks` for promote orders, just orderd like web page. When `picks` added, published date won\'t show up']}>
+
 :::tip Special category name attention
 
 Some of the categories contain slash like `3D/CG` , must change the slash `/` to the vertical bar`|`.
@@ -1047,13 +1079,15 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 
 <Route author="TonyRL" path="/youtube/charts/:category?/:country?/:embed?" example="/youtube/charts" paramsDesc={['Chart, see table below, default to `TopVideos`', 'Country Code, see table below, default to global', 'Default to embed the video, set to any value to disable embedding']} radar="1" rssbud="1">
 
-:::note Chart
+Chart
+
 | Top artists | Top songs | Top music videos | Trending |
 | ----------- | --------- | ---------------- | -------- |
 | TopArtists | TopSongs | TopVideos | TrendingVideos |
-:::
 
-:::note Country Code
+
+Country Code
+
 | Argentina | Australia | Austria | Belgium | Bolivia | Brazil | Canada |
 | --------- | --------- | ------- | ------- | ------- | ------ | ------ |
 | ar | au | at | be | bo | br | ca |
@@ -1090,7 +1124,7 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 | ------- | -------- |
 | uy      | zw       |
 
-:::
+
 
 </Route>
 
@@ -1140,7 +1174,7 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 
 ## 抖音 {#dou-yin}
 
-:::caution 注意
+:::caution
 
 反爬严格，需要启用 puppeteer。\
 抖音的视频 CDN 会验证 Referer，意味着许多阅读器都无法直接播放内嵌视频，以下是一些变通解决方案：
@@ -1267,7 +1301,7 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 
 <Route author="alfredcai" example="/douban/people/62759792/status" path="douban/people/:userid/status/:routeParams" paramsDesc={['整数型用户 id', '额外参数；见下']} radar="1">
 
-:::tip 提示
+:::tip
 
 -   **目前只支持整数型 id**
 -   字母型的 id，可以通过头像图片链接来找到其整数型 id，图片命名规则`ul[userid]-*.jpg`或`u[userid]-*.jpg`，即取文件名中间的数字
@@ -1388,8 +1422,10 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 
 ## 饭否 {#fan-fou}
 
-:::caution 注意
+:::caution
+
 部署时需要申请并配置饭否 Consumer Key、Consumer Secret、用户名和密码，具体见部署文档
+
 :::
 
 ### 用户动态 {#fan-fou-yong-hu-dong-tai}
@@ -1432,7 +1468,7 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 
 <Route author="DIYgod prnake" example="/jike/topic/556688fae4b00c57d9dd46ee" path="/jike/topic/:id/:showUid?" paramsDesc={['圈子 id, 可在即刻 web 端圈子页或 APP 分享出来的圈子页 URL 中找到', '是否在内容中显示用户信息，设置为 1 则开启']} radar="1" rssbud="1"/>
 
-### 圈子 - 纯文字 {#ji-ke-quan-zi---chun-wen-zi}
+### 圈子 - 纯文字 {#ji-ke-quan-zi-chun-wen-zi}
 
 <Route author="HenryQW" example="/jike/topic/text/553870e8e4b0cafb0a1bef68" path="/jike/topic/text/:id" paramsDesc={['圈子 id, 可在即刻 web 端圈子页或 APP 分享出来的圈子页 URL 中找到']} radar="1" rssbud="1"/>
 
@@ -1481,7 +1517,9 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 <Route author="xizeyoupan" example="/coolapk/dyh/1524" path="/coolapk/dyh/:dyhId" paramsDesc={['看看号ID']}>
 
 :::tip
+
 仅限于采集**站内订阅**的看看号的内容。看看号 ID 可在看看号界面右上分享 - 复制链接得到。
+
 :::
 
 </Route>
@@ -1507,7 +1545,9 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 | period   | daily | weekly |
 
 :::tip
+
 今日热门没有周榜，酷图榜日榜的参数会变成周榜，周榜的参数会变成月榜。
+
 :::
 
 </Route>
@@ -1534,7 +1574,7 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 
 <Route author="Erriy" example="/dgtle" path="/dgtle" />
 
-### 闲置（分类） {#shu-zi-wei-ba-xian-zhi-%EF%BC%88-fen-lei-%EF%BC%89}
+### 闲置（分类） {#shu-zi-wei-ba-xian-zhi-fen-lei}
 
 <Route author="xyqfer hoilc" example="/dgtle/trade/111" path="/dgtle/trade/:typeId?" paramsDesc={['分类 id，默认为全部']}>
 
@@ -1544,11 +1584,11 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 
 </Route>
 
-### 闲置（关键词） {#shu-zi-wei-ba-xian-zhi-%EF%BC%88-guan-jian-ci-%EF%BC%89}
+### 闲置（关键词） {#shu-zi-wei-ba-xian-zhi-guan-jian-ci}
 
 <Route author="gaoliang hoilc" example="/dgtle/trade/search/ipad" path="/dgtle/trade/search/:keyword" paramsDesc={['搜索关键词']}/>
 
-### 鲸图（分类） {#shu-zi-wei-ba-jing-tu-%EF%BC%88-fen-lei-%EF%BC%89}
+### 鲸图（分类） {#shu-zi-wei-ba-jing-tu-fen-lei}
 
 <Route author="Erriy" example="/dgtle/whale/category/0" path="/dgtle/whale/category/:category" paramsDesc={['分类 id']}>
 
@@ -1558,7 +1598,7 @@ YouTube provides official RSS feeds for channels, for instance <https://www.yout
 
 </Route>
 
-### 鲸图（排行榜） {#shu-zi-wei-ba-jing-tu-%EF%BC%88-pai-hang-bang-%EF%BC%89}
+### 鲸图（排行榜） {#shu-zi-wei-ba-jing-tu-pai-hang-bang}
 
 <Route author="Erriy" example="/dgtle/whale/rank/download/day" path="/dgtle/whale/rank/:type/:rule" paramsDesc={['排行榜类型', '排行榜周期']}>
 
@@ -1582,7 +1622,7 @@ rule
 
 <Route author="xyqfer" example="/weseepro/newest" path="/weseepro/newest"/>
 
-### 最新（无中间页） {#shua-ping-zui-xin-%EF%BC%88-wu-zhong-jian-ye-%EF%BC%89}
+### 最新（无中间页） {#shua-ping-zui-xin-wu-zhong-jian-ye}
 
 <Route author="xyqfer yefoenix" example="/weseepro/newest-direct" path="/weseepro/newest-direct"/>
 
@@ -1592,7 +1632,7 @@ rule
 
 ## 微博 {#wei-bo}
 
-:::caution 注意
+:::caution
 
 微博会针对请求的来源地区返回不同的结果。\
 一个已知的例子为：部分视频因未知原因仅限中国大陆境内访问 (CDN 域名为 `locallimit.us.sinaimg.cn` 而非 `f.video.weibocdn.com`)。若一条微博含有这种视频且 RSSHub 实例部署在境外，抓取到的微博可能不含视频。将 RSSHub 部署在境内有助于抓取这种视频，但阅读器也必须处于境内网络环境以加载视频。
@@ -1663,7 +1703,7 @@ rule
 
 <Route author="zytomorrow DIYgod Rongronggg9" example="/weibo/timeline/3306934123" path="/weibo/timeline/:uid/:feature?/:routeParams?" paramsDesc={['用户的uid', '过滤类型ID，0：全部、1：原创、2：图片、3：视频、4：音乐，默认为0。', '额外参数；请参阅上面的说明和表格']} anticrawler="1" selfhost="1">
 
-:::caution 注意
+:::caution
 
 需要对应用户打开页面进行授权生成 token 才能生成内容
 
@@ -1677,7 +1717,7 @@ rule
 
 <Route author="monologconnor Rongronggg9" example="/weibo/group/4541216424989965/微博分组/:routeParams?" path="/weibo/group/:gid/:gname?/:routeParams?" paramsDesc={['分组id, 在网页版分组地址栏末尾`?gid=`处获取', '分组显示名称; 默认为: `微博分组`', '额外参数；请参阅上面的说明和表格']} anticrawler="1" selfhost="1">
 
-:::caution 注意
+:::caution
 
 由于微博官方未提供自定义分组相关 api, 此方案必须使用用户`Cookie`进行抓取
 
@@ -1689,9 +1729,9 @@ rule
 
 </Route>
 
-## 微博绿洲 {#wei-bo-l%C3%BC-zhou}
+## 微博绿洲 {#wei-bo-lv-zhou}
 
-### 用户 {#wei-bo-l%C3%BC-zhou-yong-hu}
+### 用户 {#wei-bo-lv-zhou-yong-hu}
 
 <Route author="kt286" example="/weibo/oasis/user/1990895721" path="/weibo/oasis/user/:userid" paramsDesc={['用户 id, 可在用户主页 URL 中找到']} anticrawler="1"/>
 
@@ -1701,7 +1741,7 @@ rule
 
 <Route author="nczitzk" example="/wukong/user/5826687196" path="/wukong/user/:id/:type?" paramsDesc={['用户ID，可在用户页 URL 中找到', '类型，可选 `dongtai` 即 动态，`answers` 即 回答，`questions` 即 提问，默认为 `dongtai`']}>
 
-:::tip 注意
+:::tip
 
 用户的动态是一定时间范围内用户提出的问题和作出的回答，距离现在时间较久的问题和回答不会出现，此时选择 `dongtai` 用户动态是会缺失的。
 
@@ -1717,8 +1757,10 @@ rule
 
 <Route author="lotosbin" example="/xiaohongshu/user/593032945e87e77791e03696/notes" path="/xiaohongshu/user/:user_id/notes/:fulltext?" paramsDesc={['用户 ID', '若为`fulltext`将抓取笔记全文，若为空则只抓取笔记标题']} puppeteer="1" anticrawler="1" radar="1" rssbud="1"/>
 
-:::tip 提示
+:::tip
+
 笔记全文不支持显示视频
+
 :::
 
 ### 用户收藏 {#xiao-hong-shu-yong-hu-shou-cang}
@@ -1731,9 +1773,11 @@ rule
 
 ## 新榜 {#xin-bang}
 
-:::caution 注意
+:::caution
+
 部署时需要配置 NEWRANK_COOKIE，具体见部署文档
 请勿过高频抓取，新榜疑似对每天调用 token 总次数进行了限制，超限会报错
+
 :::
 
 ### 微信公众号 {#xin-bang-wei-xin-gong-zhong-hao}
@@ -1744,8 +1788,10 @@ rule
 
 <Route author="lessmoe" example="/newrank/douyin/110266463747" path="/newrank/douyin/:dyid" paramsDesc={['抖音ID，可在新榜账号详情 URL 中找到']} anticrawler="1" selfhost="1"/>
 
-:::caution 注意
+:::caution
+
 免费版账户抖音每天查询次数 20 次，如需增加次数可购买新榜会员或等待未来多账户支持
+
 :::
 
 ## 知乎 {#zhi-hu}
@@ -1778,7 +1824,7 @@ rule
 
 <Route author="DHPO" example="/zhihu/daily" path="/zhihu/daily" anticrawler="1" radar="1" rssbud="1"/>
 
-### 知乎日报 - 合集 {#zhi-hu-zhi-hu-ri-bao---he-ji}
+### 知乎日报 - 合集 {#zhi-hu-zhi-hu-ri-bao-he-ji}
 
 <Route author="ccbikai" example="/zhihu/daily/section/2" path="/zhihu/daily/section/:sectionId" paramsDesc={['合集 id, 可在 https://news-at.zhihu.com/api/7/sections 找到']} anticrawler="1"/>
 
@@ -1812,15 +1858,15 @@ rule
 
 <Route author="xyqfer" example="/zhihu/people/pins/kan-dan-45" path="/zhihu/people/pins/:id" paramsDesc={['作者 id, 可在用户主页 URL 中找到']} anticrawler="1" radar="1" rssbud="1"/>
 
-### 知乎书店 - 新书 {#zhi-hu-zhi-hu-shu-dian---xin-shu}
+### 知乎书店 - 新书 {#zhi-hu-zhi-hu-shu-dian-xin-shu}
 
 <Route author="xyqfer" example="/zhihu/bookstore/newest" path="/zhihu/bookstore/newest" anticrawler="1" radar="1" rssbud="1"/>
 
-### 知乎想法 - 24 小时新闻汇总 {#zhi-hu-zhi-hu-xiang-fa---24-xiao-shi-xin-wen-hui-zong}
+### 知乎想法 - 24 小时新闻汇总 {#zhi-hu-zhi-hu-xiang-fa-24-xiao-shi-xin-wen-hui-zong}
 
 <Route author="xyqfer" example="/zhihu/pin/daily" path="/zhihu/pin/daily" anticrawler="1" radar="1" rssbud="1"/>
 
-### 知乎书店 - 知乎周刊 {#zhi-hu-zhi-hu-shu-dian---zhi-hu-zhou-kan}
+### 知乎书店 - 知乎周刊 {#zhi-hu-zhi-hu-shu-dian-zhi-hu-zhou-kan}
 
 <Route author="LogicJake" example="/zhihu/weekly" path="/zhihu/weekly" anticrawler="1" radar="1" rssbud="1"/>
 
@@ -1828,7 +1874,7 @@ rule
 
 <Route author="SeanChao" example="/zhihu/timeline" path="/zhihu/timeline" anticrawler="1" selfhost="1">
 
-:::caution 注意
+:::caution
 
 用户关注动态需要登录后的 Cookie 值，所以只能自建，详情见部署页面的配置模块。
 
@@ -1836,6 +1882,18 @@ rule
 
 </Route>
 
-### [xhu](https://github.com/REToys/xhu) - 话题 {#zhi-hu-%5Bxhu%5D(https%3A%2F%2Fgithub.com%2Fretoys%2Fxhu)---hua-ti}
+### [xhu](https://github.com/REToys/xhu) - 收藏夹 {#zhi-hu-xhu-https-github.com-retoys-xhu-shou-cang-jia}
+
+<Route author="JimenezLi" example="/zhihu/xhu/collection/26444956" path="/zhihu/xhu/collection/:id" paramsDesc={['收藏夹 id, 可在收藏夹页面 URL 中找到']} anticrawler="1"/>
+
+### [xhu](https://github.com/REToys/xhu) - 专栏 {#zhi-hu-xhu-https-github.com-retoys-xhu-zhuan-lan}
+
+<Route author="JimenezLi" example="/zhihu/xhu/zhuanlan/githubdaily" path="/zhihu/xhu/zhuanlan/:id" paramsDesc={['专栏 id, 可在专栏主页 URL 中找到']} anticrawler="1"/>
+
+### [xhu](https://github.com/REToys/xhu) - 问题 {#zhi-hu-xhu-https-github.com-retoys-xhu-wen-ti}
+
+<Route author="JimenezLi" example="/zhihu/xhu/question/264051433" path="/zhihu/xhu/question/:questionId/:sortBy?" paramsDesc={['问题 id', '排序方式：`default`, `created`, `updated`。默认为 `default`']} anticrawler="1"/>
+
+### [xhu](https://github.com/REToys/xhu) - 话题 {#zhi-hu-xhu-https-github.com-retoys-xhu-hua-ti}
 
 <Route author="JimenezLi" example="/zhihu/xhu/topic/19566035" path="/zhihu/xhu/topic/:topicId" paramsDesc={['话题ID']} anticrawler="1"/>

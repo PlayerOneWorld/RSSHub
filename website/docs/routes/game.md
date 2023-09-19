@@ -1,5 +1,3 @@
-import Route from '@site/src/components/Route';
-
 # 🎮 Gaming
 
 ## 3DMGame {#3dmgame}
@@ -78,22 +76,22 @@ Categories
 
 Language codes
 
-| Language       | Code  |
-| -------------- | ----- |
-| Deutsch        | de-de    |
-| English (US)   | en-us    |
-| English (EU)   | en-gb    |
-| Español (EU)   | es-es    |
-| Español (Latino)   | es-mx    |
-| Français       | fr-fr    |
-| Italiano       | it-it    |
-| Português (Brasil) | pt-br    |
-| Polski         | pl-pl    |
-| Русский        | ru-ru    |
-| 한국어          | ko-kr    |
-| ภาษาไทย        | th-th    |
-| 日本語          | ja-jp    |
-| 繁體中文        | zh-tw    |
+| Language           | Code  |
+| ------------------ | ----- |
+| Deutsch            | de-de |
+| English (US)       | en-us |
+| English (EU)       | en-gb |
+| Español (EU)       | es-es |
+| Español (Latino)   | es-mx |
+| Français           | fr-fr |
+| Italiano           | it-it |
+| Português (Brasil) | pt-br |
+| Polski             | pl-pl |
+| Русский            | ru-ru |
+| 한국어             | ko-kr |
+| ภาษาไทย            | th-th |
+| 日本語             | ja-jp |
+| 繁體中文           | zh-tw |
 
 </Route>
 
@@ -133,7 +131,7 @@ Language codes
 
 </Route>
 
-### FINAL FANTASY XIV (The Lodestone) {#final-fantasy-xiv-zui-zhong-huan-xiang-14-final-fantasy-xiv-(the-lodestone)}
+### FINAL FANTASY XIV (The Lodestone) {#final-fantasy-xiv-zui-zhong-huan-xiang-14-final-fantasy-xiv-the-lodestone}
 
 <Route author="chengyuhui" example="/ff14/global/na/all" path="/ff14/global/:lang/:type?" paramsDesc={['Region', 'Category, `all` by default']}>
 
@@ -145,8 +143,8 @@ Region
 
 Category
 
-| all | topics | notices | maintenance | updates | status   | developers |
-| --- | ------ | ------- | ----------- | ------- | -------- | ---------- |
+| all | topics | notices | maintenance | updates | status | developers |
+| --- | ------ | ------- | ----------- | ------- | ------ | ---------- |
 
 </Route>
 
@@ -180,9 +178,9 @@ Category
 
 <Route author="nczitzk" example="/gamersecret" path="/gamersecret/:type?/:category?" paramsDesc={['Type, see below, Latest News by default', 'Category, see below']}>
 
-| Latest News | PC | Playstation | Nintendo | Xbox | Moblie |
-| ----------- | -- | ----------- | -------- | ---- | ------ |
-| latest-news | pc | playstation | nintendo | xbox | moblie |
+| Latest News | PC  | Playstation | Nintendo | Xbox | Moblie |
+| ----------- | --- | ----------- | -------- | ---- | ------ |
+| latest-news | pc  | playstation | nintendo | xbox | moblie |
 
 Or
 
@@ -268,7 +266,7 @@ Or
 
 So the route is [`/itch/games/top-rated/tag-singleplayer`](https://rsshub.app/itch/games/top-rated/tag-singleplayer).
 
-:::tip tips
+:::tip
 
 You can browse all the tags at [here](https://itch.io/tags).
 
@@ -297,6 +295,7 @@ So the route is [`/itch/devlogs/teamterrible/the-baby-in-yellow`](https://rsshub
 ### 游戏折扣 {#jump-you-xi-zhe-kou}
 
 <Route author="zytomorrow" path="/jump/discount/:platform/:filter?/:countries?" example="/jump/discount/ps5/all" paramsDesc={['平台:switch,ps4,ps5,xbox,steam,epic', '过滤参数,all-全部，jx-精选，sd-史低，dl-独立，vip-会员', '地区，具体支持较多，可自信查看地区简写']}>
+
 | switch | ps4  | ps5  | xbox   | steam | epic   |
 | ------ | ---- | ---- | ------ | ----- | ------ |
 | 可用   | 可用 | 可用 | 不可用 | 可用  | 不可用 |
@@ -304,10 +303,10 @@ So the route is [`/itch/devlogs/teamterrible/the-baby-in-yellow`](https://rsshub
 | filter | switch | ps4 | ps5 | steam |
 | ------ | ------ | --- | --- | ----- |
 | all    | ✔      | ✔   | ✔   | ✔     |
-| jx     | ✔      | ✔   | ❌  | ✔     |
+| jx     | ✔      | ✔   | ❌   | ✔     |
 | sd     | ✔      | ✔   | ✔   | ✔     |
-| dl     | ❌     | ✔   | ❌  | ✔     |
-| vip    | ❌     | ❌  | ✔   | ❌    |
+| dl     | ❌      | ✔   | ❌   | ✔     |
+| vip    | ❌      | ❌   | ✔   | ❌     |
 
 | 北美 | 欧洲（英语） | 法国 | 德国 | 日本 |
 | ---- | ------------ | ---- | ---- | ---- |
@@ -372,8 +371,8 @@ Sorting types, default to `date`:
 ### Feed The Beast Modpack Updates {#minecraft-feed-the-beast-modpack-updates}
 
 <Route author="gucheen" example="/feed-the-beast/modpack/ftb_presents_direwolf20_1_16" path="/feed-the-beast/modpack/:modpackEntry" paramsDesc={['entry name of modpack.']}>
-| param | description |
-| ------| ------------ |
+| param        | description                                                                                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | modpackEntry | The entry name of modpack, can be found in modpack\'s page link, for `https://www.feed-the-beast.com/modpack/ftb_presents_direwolf20_1_16`, use `ftb_presents_direwolf20_1_16`. |
 </Route>
 
@@ -383,11 +382,11 @@ Sorting types, default to `date`:
 
 <Route author="HFO4" example="/nintendo/eshop/hk" path="/nintendo/eshop/:region" paramsDesc={['Region, currently supports `hk`(Hong Kong), `jp`(Japan) and `us`(USA)']}/>
 
-### News（Hong Kong only） {#nintendo-news%EF%BC%88hong-kong-only%EF%BC%89}
+### News（Hong Kong only） {#nintendo-news-hong-kong-only}
 
 <Route author="HFO4" example="/nintendo/news" path="/nintendo/news"/>
 
-### 首页资讯（中国） {#nintendo-shou-ye-zi-xun-%EF%BC%88-zhong-guo-%EF%BC%89}
+### 首页资讯（中国） {#nintendo-shou-ye-zi-xun-zhong-guo}
 
 <Route author="NeverBehave" example="/nintendo/news/china" path="/nintendo/news/china"/>
 
@@ -395,13 +394,13 @@ Sorting types, default to `date`:
 
 <Route author="HFO4" example="/nintendo/direct" path="/nintendo/direct"/>
 
-### Switch System Update（Japan） {#nintendo-switch-system-update%EF%BC%88japan%EF%BC%89}
+### Switch System Update（Japan） {#nintendo-switch-system-update-japan}
 
 <Route author="hoilc" example="/nintendo/system-update" path="/nintendo/system-update"/>
 
 ## PlayStation Store {#playstation-store}
 
-### Game List（Hong Kong） {#playstation-store-game-list%EF%BC%88hong-kong%EF%BC%89}
+### Game List（Hong Kong） {#playstation-store-game-list-hong-kong}
 
 <Route author="DIYgod" example="/ps/list/STORE-MSF86012-PLUS_FTT_CONTENT" path="/ps/list/:gridName" paramsDesc={['gridName from the list']}>
 
@@ -429,7 +428,7 @@ Compatible with Product with an URL like <https://store.playstation.com/en-us/pr
 
 ## psnine {#psnine}
 
-### 首页 - 白金攻略 / 游戏开箱 {#psnine-shou-ye---bai-jin-gong-l%C3%BCe-%2F-you-xi-kai-xiang}
+### 首页 - 白金攻略 / 游戏开箱 {#psnine-shou-ye-bai-jin-gong-lve-you-xi-kai-xiang}
 
 <Route author="LightStrawberry" example="/psnine/index" path="/psnine/index"/>
 
@@ -455,15 +454,15 @@ Compatible with Product with an URL like <https://store.playstation.com/en-us/pr
 
 </Route>
 
-### 数折 - 折扣信息推送 {#psnine-shu-zhe---zhe-kou-xin-xi-tui-song}
+### 数折 - 折扣信息推送 {#psnine-shu-zhe-zhe-kou-xin-xi-tui-song}
 
 <Route author="LightStrawberry" example="/psnine/shuzhe" path="/psnine/shuzhe"/>
 
-### 闲游 - 二手盘信息 {#psnine-xian-you---er-shou-pan-xin-xi}
+### 闲游 - 二手盘信息 {#psnine-xian-you-er-shou-pan-xin-xi}
 
 <Route author="LightStrawberry" example="/psnine/trade" path="/psnine/trade"/>
 
-### 游戏 - 新游戏奖杯信息 {#psnine-you-xi---xin-you-xi-jiang-bei-xin-xi}
+### 游戏 - 新游戏奖杯信息 {#psnine-you-xi-xin-you-xi-jiang-bei-xin-xi}
 
 <Route author="LightStrawberry" example="/psnine/game" path="/psnine/game"/>
 
@@ -506,45 +505,45 @@ For instance, in `https://store.steampowered.com/search/?specials=1&term=atelier
 
 ## TapTap International {#taptap-international}
 
-:::caution Warning
+:::caution
 
 Due to the regional restrictions, an RSSHub deployment in China Mainland may not work on accessing the TapTap International Website.
 
 :::
 
-### Game's Changelog {#taptap-international-game's-changelog}
+### Game's Changelog {#taptap-international-game-s-changelog}
 
 <Route author="hoilc ETiV" example="/taptap/intl/changelog/191001/zh_TW" path="/taptap/intl/changelog/:id/:lang?" paramsDesc={['Game\'s App ID, you may find it from the URL of the Game', 'Language, checkout the table below for possible values, default is `en_US`']}>
 
 Language Code
 
 | English (US) | 繁體中文 | 한국어 | 日本語 |
-| ----- | ----- | ----- | ----- |
-| en_US | zh_TW | ko_KR | ja_JP |
+| ------------ | -------- | ------ | ------ |
+| en_US        | zh_TW    | ko_KR  | ja_JP  |
 
 </Route>
 
-### Ratings & Reviews {#taptap-international-ratings-%26-reviews}
+### Ratings & Reviews {#taptap-international-ratings-reviews}
 
 <Route author="hoilc TonyRL ETiV" example="/taptap/intl/review/82354/new/zh_TW" path="/taptap/intl/review/:id/:order?/:lang?" paramsDesc={['Game\'s App ID, you may find it from the URL of the Game', 'Sort Method, you may use `new` as the **Most Recent**, use `default` or leave it empty for the **Most Relevant**', 'Language, checkout the table below for possible values, default is `en_US`']}>
 
 Sort Method
 
-| Most Relevant  | Most Recent |
-| -------------- | ---- |
-| default        | new  |
+| Most Relevant | Most Recent |
+| ------------- | ----------- |
+| default       | new         |
 
 Language Code
 
 | English (US) | 繁體中文 | 한국어 | 日本語 |
-| ----- | ----- | ----- | ----- |
-| en_US | zh_TW | ko_KR | ja_JP |
+| ------------ | -------- | ------ | ------ |
+| en_US        | zh_TW    | ko_KR  | ja_JP  |
 
 </Route>
 
 ## TapTap 中国 {#taptap-zhong-guo}
 
-:::caution 注意
+:::caution
 
 由于区域限制，需要在有国内 IP 的机器上自建才能正常获取 RSS。\
 而对于《TapTap 国际版》则需要部署在具有海外出口的 IP 上才可正常获取 RSS。
@@ -569,11 +568,11 @@ Language Code
 
 <Route author="hoilc ETiV" example="/taptap/changelog/60809/en_US" path="/taptap/changelog/:id/:lang?" paramsDesc={['游戏 ID，游戏主页 URL 中获取', '语言，默认使用 `zh_CN`，亦可使用 `en_US`']}/>
 
-### 游戏更新 - 国际版 {#taptap-zhong-guo-you-xi-geng-xin---guo-ji-ban}
+### 游戏更新 - 国际版 {#taptap-zhong-guo-you-xi-geng-xin-guo-ji-ban}
 
 <Route author="hoilc ETiV" example="/taptap/intl/changelog/191001/zh_TW" path="/taptap/intl/changelog/:id/:lang?" paramsDesc={['游戏 ID，游戏主页 URL 中获取', '语言代码，默认使用 `en_US`，可选项目见下表']}>
 
-#### 语言代码
+#### 语言代码 {#taptap-zhong-guo-you-xi-geng-xin-guo-ji-ban-yu-yan-dai-ma}
 
 | English (US) | 繁體中文 | 한국어 | 日本語 |
 | ------------ | -------- | ------ | ------ |
@@ -591,17 +590,17 @@ Language Code
 
 </Route>
 
-### 游戏评价 - 国际版 {#taptap-zhong-guo-you-xi-ping-jia---guo-ji-ban}
+### 游戏评价 - 国际版 {#taptap-zhong-guo-you-xi-ping-jia-guo-ji-ban}
 
 <Route author="hoilc TonyRL ETiV" example="/taptap/intl/review/82354/new" path="/taptap/intl/review/:id/:order?/:lang?" paramsDesc={['游戏 ID，游戏主页 URL 中获取', '排序方式，空为默认排序，可选如下', '语言代码，默认使用 `en_US`，可选项目见下表']}>
 
-#### 排序方式
+#### 排序方式 {#taptap-zhong-guo-you-xi-ping-jia-guo-ji-ban-pai-xu-fang-shi}
 
 | 最相关  | 最新 |
 | ------- | ---- |
 | default | new  |
 
-#### 语言代码
+#### 语言代码 {#taptap-zhong-guo-you-xi-ping-jia-guo-ji-ban-yu-yan-dai-ma}
 
 | English (US) | 繁體中文 | 한국어 | 日本語 |
 | ------------ | -------- | ------ | ------ |
@@ -626,9 +625,9 @@ The year, month and day provided under UTC time zone are the same as the officia
 
 <Route author="Arracc" example="/gamer/gnn/1" path="/gamer/gnn/:category?"  paramsDesc={['版块']}>
 
-| 首頁 | PC | TV 掌機 | 手機遊戲 | 動漫畫 | 主題報導 | 活動展覽 | 電競 |
-| ---- | -- | ------- | -------- | ------ | -------- | -------- | ---- |
-| 缺省 | 1  | 3       | 4        | 5      | 9        | 11       | 13   |
+| 首頁 | PC  | TV 掌機 | 手機遊戲 | 動漫畫 | 主題報導 | 活動展覽 | 電競 |
+| ---- | --- | ------- | -------- | ------ | -------- | -------- | ---- |
+| 缺省 | 1   | 3       | 4        | 5      | 9        | 11       | 13   |
 
 | Switch | PS5 | PS4 | XboxOne | XboxSX | PC 單機 | PC 線上 | iOS | Android | Web | 漫畫  | 動畫  |
 | ------ | --- | --- | ------- | ------ | ------- | ------- | --- | ------- | --- | ----- | ----- |
@@ -694,31 +693,31 @@ The year, month and day provided under UTC time zone are the same as the officia
 
 </Route>
 
-## 旅法师营地 {#l%C3%BC-fa-shi-ying-di}
+## 旅法师营地 {#lv-fa-shi-ying-di}
 
-### 首页 {#l%C3%BC-fa-shi-ying-di-shou-ye}
+### 首页 {#lv-fa-shi-ying-di-shou-ye}
 
 <Route author="auto-bot-ty" example="/lfsyd/home" path="/lfsyd/home" radar="1" rssbud="1"/>
 
-### 首页（旧版） {#l%C3%BC-fa-shi-ying-di-shou-ye-%EF%BC%88-jiu-ban-%EF%BC%89}
+### 首页（旧版） {#lv-fa-shi-ying-di-shou-ye-jiu-ban}
 
 <Route author="auto-bot-ty" example="/lfsyd/old_home" path="/lfsyd/old_home" radar="1" rssbud="1"/>
 
-### 分区 {#l%C3%BC-fa-shi-ying-di-fen-qu}
+### 分区 {#lv-fa-shi-ying-di-fen-qu}
 
 <Route author="auto-bot-ty" example="/lfsyd/tag/17" path="/lfsyd/tag/:tagId" paramsDesc={['订阅分区类型']} radar="1" rssbud="1">
 
 | 炉石传说 | 万智牌 | 游戏王 | 昆特牌 | 影之诗 | 符文之地传奇 | 阴阳师百闻牌 |
 | :------: | :----: | :----: | :----: | :----: | :----------: | :----------: |
-|    17    |   18   |   16   |   19   |   20   |      329     |      221     |
+|    17    |   18   |   16   |   19   |   20   |     329      |     221      |
 
 | 英雄联盟 | 电子游戏 | 桌面游戏 | 卡牌游戏 | 玩家杂谈 | 二次元 |
 | :------: | :------: | :------: | :------: | :------: | :----: |
-|    112   |    389   |    24    |    102   |    23    |   117  |
+|   112    |   389    |    24    |   102    |    23    |  117   |
 
 </Route>
 
-### 用户的帖子 {#l%C3%BC-fa-shi-ying-di-yong-hu-de-tie-zi}
+### 用户的帖子 {#lv-fa-shi-ying-di-yong-hu-de-tie-zi}
 
 <Route author="auto-bot-ty" example="/lfsyd/user/55547" path="/lfsyd/user/:id" paramsDesc={['用户 id']} radar="1" rssbud="1"/>
 
@@ -728,7 +727,7 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 ## 米哈游 {#mi-ha-you}
 
-### 崩坏 2 - 游戏公告 {#mi-ha-you-beng-huai-2---you-xi-gong-gao}
+### 崩坏 2 - 游戏公告 {#mi-ha-you-beng-huai-2-you-xi-gong-gao}
 
 <Route author="deepred5" example="/mihoyo/bh2/gach" path="/mihoyo/bh2/:type" paramsDesc={['公告种类']}>
 
@@ -738,7 +737,7 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 </Route>
 
-### 崩坏 3 - 游戏公告 {#mi-ha-you-beng-huai-3---you-xi-gong-gao}
+### 崩坏 3 - 游戏公告 {#mi-ha-you-beng-huai-3-you-xi-gong-gao}
 
 <Route author="deepred5 nczitzk" example="/mihoyo/bh3/latest" path="/mihoyo/bh3/:type" paramsDesc={['公告种类']}>
 
@@ -748,7 +747,53 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 </Route>
 
-### 米游社 - 官方公告 {#mi-ha-you-mi-you-she---guan-fang-gong-gao}
+### 米游社 - 同人榜 {#mi-ha-you-mi-you-she-tong-ren-bang}
+
+<Route author="CaoMeiYouRen" example="/mihoyo/bbs/img-ranking/ys/forumType=tongren&cateType=illustration&rankingType=daily" path="/bbs/img-ranking/:game/:routeParams?" paramsDesc={['游戏缩写','额外参数；请参阅以下说明和表格']} radar="1">
+
+| 键          | 含义                                | 接受的值                                                             | 默认值       |
+| ----------- | ----------------------------------- | -------------------------------------------------------------------- | ------------ |
+| forumType   | 主榜类型（仅原神、大别野有cos主榜） | tongren/cos                                                          | tongren      |
+| cateType    | 子榜类型（仅崩坏三、原神有子榜）    | 崩坏三：illustration/comic/cos；原神：illustration/comic/qute/manual | illustration |
+| rankingType | 排行榜类型（崩坏二没有日榜）        | daily/weekly/monthly                                                 | daily        |
+| lastId      | 当前页id（用于分页）                | 数字                                                                 | 1            |
+
+游戏缩写（目前绝区零还没有同人榜
+
+| 崩坏三 | 原神 | 崩坏二 | 未定事件簿 | 星穹铁道 | 大别野 |
+| ------ | ---- | ------ | ---------- | -------- | ------ |
+| bh3    | ys   | bh2    | wd         | sr       | dby    |
+
+主榜类型
+
+| 同人榜  | COS榜 |
+| ------- | ----- |
+| tongren | cos   |
+
+子榜类型
+
+崩坏三 子榜
+
+| 插画         | 漫画  | COS |
+| ------------ | ----- | --- |
+| illustration | comic | cos |
+
+
+原神 子榜
+
+| 插画         | 漫画  | Q版  | 手工   |
+| ------------ | ----- | ---- | ------ |
+| illustration | comic | qute | manual |
+
+排行榜类型
+
+| 日榜  | 周榜   | 月榜    |
+| ----- | ------ | ------- |
+| daily | weekly | monthly |
+
+</Route>
+
+### 米游社 - 官方公告 {#mi-ha-you-mi-you-she-guan-fang-gong-gao}
 
 <Route author="CaoMeiYouRen" example="/mihoyo/bbs/official/2/3/20/" path="/bbs/official/:gids/:type?/:page_size?/:last_id?" paramsDesc={['游戏id','公告类型，默认为 2(即 活动)','分页大小，默认为 20 ','跳过的公告数，例如指定为 40 就是从第 40 条公告开始，可用于分页']} radar="1">
 
@@ -768,7 +813,7 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 ### 原神 {#mi-ha-you-yuan-shen}
 
-#### 新闻
+#### 新闻 {#mi-ha-you-yuan-shen-xin-wen}
 
 <Route author="nczitzk" example="/mihoyo/ys" path="/mihoyo/ys/:location?/:category?" paramsDesc={['区域，可选 `main`（简中）或 `zh-tw`（繁中）', '分类，见下表，默认为最新']}>
 
@@ -778,9 +823,9 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 </Route>
 
-### 崩坏：星穹铁道 {#mi-ha-you-beng-huai-%EF%BC%9A-xing-qiong-tie-dao}
+### 崩坏：星穹铁道 {#mi-ha-you-beng-huai-xing-qiong-tie-dao}
 
-#### 新闻
+#### 新闻 {#mi-ha-you-beng-huai-xing-qiong-tie-dao-xin-wen}
 
 <Route author="shinanory" example="/mihoyo/sr" path="/mihoyo/sr/:location?/:category?" paramsDesc={['区域，可选 `zh-cn`（国服，简中）或 `zh-tw`（国际服，繁中）','分类，见下表，默认为最新']}>
 
@@ -802,19 +847,19 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 平台
 
-|  安卓服 | iOS 服 |   B 服   |
+| 安卓服  | iOS 服 |   B 服   |
 | :-----: | :----: | :------: |
-| Android |   IOS  | Bilibili |
+| Android |  IOS   | Bilibili |
 
 分组
 
-| 全部 | 系统公告 | 活动公告 |
-| :--: | :------: | :------: |
-|  ALL |  SYSTEM  | ACTIVITY |
+| 全部  | 系统公告 | 活动公告 |
+| :---: | :------: | :------: |
+|  ALL  |  SYSTEM  | ACTIVITY |
 
 </Route>
 
-### アークナイツ (日服新闻) {#ming-ri-fang-zhou-%E3%82%A2%E3%83%BC%E3%82%AF%E3%83%8A%E3%82%A4%E3%83%84-(-ri-fu-xin-wen-)}
+### アークナイツ (日服新闻) {#ming-ri-fang-zhou-%E3%82%A2%E3%83%BC%E3%82%AF%E3%83%8A%E3%82%A4%E3%83%84-ri-fu-xin-wen}
 
 <Route author="ofyark" example="/arknights/japan" path="/arknights/japan"/>
 
@@ -834,7 +879,7 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 <Route author="nczitzk" example="/keylol" path="/keylol/:path+" paramsDesc={['路径，默认为热点聚焦']}>
 
-:::tip 提示
+:::tip
 
 若订阅 [热点聚焦](https://keylol.com/f161-1)，网址为 <https://keylol.com/f161-1>。截取 `https://keylol.com/` 到末尾的部分 `f161-1` 作为参数，此时路由为 [`/keylol/f161-1`](https://rsshub.app/keylol/f161-1)。
 
@@ -844,9 +889,9 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 </Route>
 
-## 少女前线 {#shao-n%C3%BC-qian-xian}
+## 少女前线 {#shao-nv-qian-xian}
 
-### 情报局 {#shao-n%C3%BC-qian-xian-qing-bao-ju}
+### 情报局 {#shao-nv-qian-xian-qing-bao-ju}
 
 <Route author="nczitzk" example="/gf-cn/news" path="/gf-cn/news/:category?" paramsDesc={['分类，见下表，默认为新闻']}>
 
@@ -856,9 +901,9 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 </Route>
 
-## 世界计划 多彩舞台 ｜ ProjectSekai ｜ プロセカ {#shi-jie-ji-hua-duo-cai-wu-tai-%EF%BD%9C-projectsekai-%EF%BD%9C-%E3%83%97%E3%83%AD%E3%82%BB%E3%82%AB}
+## 世界计划 多彩舞台 ｜ ProjectSekai ｜ プロセカ {#shi-jie-ji-hua-duo-cai-wu-tai-projectsekai-%E3%83%97%E3%83%AD%E3%82%BB%E3%82%AB}
 
-### News {#shi-jie-ji-hua-duo-cai-wu-tai-%EF%BD%9C-projectsekai-%EF%BD%9C-%E3%83%97%E3%83%AD%E3%82%BB%E3%82%AB-news}
+### News {#shi-jie-ji-hua-duo-cai-wu-tai-projectsekai-%E3%83%97%E3%83%AD%E3%82%BB%E3%82%AB-news}
 
 <Route author="15x15G" example="/pjsk/news" path="/pjsk/news"/>
 
@@ -956,11 +1001,17 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 <Route author="wy916787036" example="/vgn" path="/vgn/:platform?" paramsDesc={['平台，见下表，默认为全部']}>
 
-| Switch | PS4 | PC | Xbox |
-| ------ | --- | -- | ---- |
-| 1      | 2   | 3  | 4    |
+| Switch | PS4 | PC  | Xbox |
+| ------ | --- | --- | ---- |
+| 1      | 2   | 3   | 4    |
 
 </Route>
+
+## 游戏基因 {#you-xi-ji-yin}
+
+### 资讯 {#you-xi-ji-yin-zi-xun}
+
+<Route author="lone1y-51" example="/gamegene/news" path="/gamegene/news"/>
 
 ## 游戏年轮 {#you-xi-nian-lun}
 
@@ -1018,7 +1069,7 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 ## 游研社 {#you-yan-she}
 
-### 游研社 - 分类文章 {#you-yan-she-you-yan-she---fen-lei-wen-zhang}
+### 游研社 - 分类文章 {#you-yan-she-you-yan-she-fen-lei-wen-zhang}
 
 <Route author="LightStrawberry" example="/yystv/category/recommend" path="/yystv/category/:category" paramsDesc={['专栏类型']}>
 
@@ -1028,7 +1079,7 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 </Route>
 
-### 游研社 - 全部文章 {#you-yan-she-you-yan-she---quan-bu-wen-zhang}
+### 游研社 - 全部文章 {#you-yan-she-you-yan-she-quan-bu-wen-zhang}
 
 <Route author="HaitianLiu" example="/yystv/docs" path="/yystv/docs" />
 
@@ -1067,9 +1118,9 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 </Route>
 
-## きららファンタジア｜奇拉拉幻想曲 {#%E3%81%8D%E3%82%89%E3%82%89%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%82%A2%EF%BD%9C-qi-la-la-huan-xiang-qu}
+## きららファンタジア｜奇拉拉幻想曲 {#%E3%81%8D%E3%82%89%E3%82%89%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%82%A2-qi-la-la-huan-xiang-qu}
 
-### 公告 {#%E3%81%8D%E3%82%89%E3%82%89%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%82%A2%EF%BD%9C-qi-la-la-huan-xiang-qu-gong-gao}
+### 公告 {#%E3%81%8D%E3%82%89%E3%82%89%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%82%A2-qi-la-la-huan-xiang-qu-gong-gao}
 
 <Route author="magic-akari" example="/kirara/news" path="/kirara/news"/>
 
@@ -1079,19 +1130,18 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 <Route author="TonyRL" example="/famitsu/category/new-article" path="/famitsu/category/:category?" paramsDesc={['Category, see table below, `new-article` by default']} radar="1">
 
-| 新着          | PS5 | Switch | PS4 | ニュース | ゲームニュース   | PR TIMES | 動画     | 特集・企画記事         | インタビュー    | 取材・リポート      | レビュー   | インディーゲーム   |
-| ----------- | --- | ------ | --- | ---- | --------- | -------- | ------ | --------------- | --------- | ------------ | ------ | ---------- |
-| new-article | ps5 | switch | ps4 | news | news-game | prtimes  | videos | special-article | interview | event-report | review | indie-game |
+| 新着        | PS5 | Switch | PS4 | ニュース | ゲームニュース | PR TIMES | 動画   | 特集・企画記事  | インタビュー | 取材・リポート | レビュー | インディーゲーム |
+| ----------- | --- | ------ | --- | -------- | -------------- | -------- | ------ | --------------- | ------------ | -------------- | -------- | ---------------- |
+| new-article | ps5 | switch | ps4 | news     | news-game      | prtimes  | videos | special-article | interview    | event-report   | review   | indie-game       |
 
 </Route>
 
-## マギアレコード（Magia Record, 魔法纪录） {#%E3%83%9E%E3%82%AE%E3%82%A2%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%EF%BC%88magia-record%2C-mo-fa-ji-lu-%EF%BC%89}
+## マギアレコード（Magia Record, 魔法纪录） {#%E3%83%9E%E3%82%AE%E3%82%A2%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89-magia-record-mo-fa-ji-lu}
 
-### 游戏公告 {#%E3%83%9E%E3%82%AE%E3%82%A2%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%EF%BC%88magia-record%2C-mo-fa-ji-lu-%EF%BC%89-you-xi-gong-gao}
+### 游戏公告 {#%E3%83%9E%E3%82%AE%E3%82%A2%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89-magia-record-mo-fa-ji-lu-you-xi-gong-gao}
 
 <Route author="y2361547758" example="/magireco/announcements" path="/magireco/announcements"/>
 
-### 游戏横幅 {#%E3%83%9E%E3%82%AE%E3%82%A2%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89%EF%BC%88magia-record%2C-mo-fa-ji-lu-%EF%BC%89-you-xi-heng-fu}
+### 游戏横幅 {#%E3%83%9E%E3%82%AE%E3%82%A2%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89-magia-record-mo-fa-ji-lu-you-xi-heng-fu}
 
 <Route author="y2361547758" example="/magireco/event_banner" path="/magireco/event_banner"/>
-
