@@ -99,7 +99,6 @@
         ],
     },
     'alter-shanghai.cn': { _name: 'Alter', '.': [{ title: '新闻', docs: 'https://docs.rsshub.app/routes/shopping#alter-zhong-guo', source: '/cn/news', target: '/alter-cn/news' }] },
-    'itslide.com': { _name: 'ITSlide', www: [{ title: '最新', docs: 'https://docs.rsshub.app/routes/programming#itslide', source: '/*', target: '/itslide/new' }] },
     'leboncoin.fr': { _name: 'leboncoin', www: [{ title: 'ads', docs: 'https://docs.rsshub.app/routes/shopping#leboncoin', source: '/recherche', target: (params, url) => '/leboncoin/ad/' + url.split('?')[1] }] },
     'yuancheng.work': {
         _name: '远程.work',
@@ -117,10 +116,8 @@
             },
         ],
     },
-    'chinatimes.com': { _name: '中時電子報', www: [{ title: '新聞', docs: 'https://docs.rsshub.app/routes/traditional-media#zhong-shi-dian-zi-bao', source: '/:caty', target: (params) => '/chinatimes/' + params.caty }] },
     'govopendata.com': { _name: '新闻联播文字版', cn: [{ title: '新闻联播文字版', docs: 'https://docs.rsshub.app/routes/traditional-media#xin-wen-lian-bo-wen-zi-ban', source: '/xinwenlianbo', target: '/xinwenlianbo/index' }] },
     'steampowered.com': { _name: 'Steam', store: [{ title: 'search', docs: 'https://docs.rsshub.app/routes/game#steam', source: '/search/', target: (params, url) => `/steam/search/${new URL(url).searchParams}` }] },
-    'xiaomi.cn': { _name: '小米社区', www: [{ title: '圈子', docs: 'https://docs.rsshub.app/routes/bbs#xiao-mi-she-qu', source: '/board/:boardId', target: '/mi/bbs/board/:boardId' }] },
     'suzhou.gov.cn': { _name: '苏州市政府', www: [{ title: '政府新闻', docs: 'https://docs.rsshub.app/routes/government#su-zhou-shi-ren-min-zheng-fu', source: '/szsrmzf/:uid/nav_list.', target: '/gov/suzhou/news/:uid' }] },
     'mqube.net': {
         _name: 'MQube',
@@ -313,21 +310,6 @@
         ],
     },
     'ems.com.cn': { _name: '中国邮政速递物流', www: [{ title: '新闻', docs: 'https://docs.rsshub.app/routes/other#zhong-guo-you-zheng-su-di-wu-liu', source: '/aboutus/xin_wen_yu_shi_jian', target: '/ems/news' }] },
-    'popiapp.cn': {
-        _name: 'Popi 提问箱',
-        www: [
-            {
-                title: '提问箱新回答',
-                docs: 'https://docs.rsshub.app/routes/social-media#popi-ti-wen-xiang',
-                source: '/:id',
-                target: (params) => {
-                    if (params.id) {
-                        return '/popiask/:id';
-                    }
-                },
-            },
-        ],
-    },
     'nppa.gov.cn': {
         _name: '国家新闻出版署',
         www: [
@@ -359,27 +341,6 @@
                     return `/wenxuecity/hot/${cid}`;
                 },
             },
-        ],
-    },
-    'buaq.net': { _name: '不安全资讯', '.': [{ title: '不安全资讯', docs: 'http://docs.rsshub.app/routes/new-media#bu-an-quan', source: '/', target: '/buaq' }] },
-    'jian-ning.com': { _name: '建宁闲谈', '.': [{ title: '文章', docs: 'https://docs.rsshub.app/routes/blog#jian-ning-xian-tan', source: '/*', target: '/blogs/jianning' }] },
-    'matataki.io': {
-        _name: 'matataki',
-        www: [
-            { title: '最热作品', docs: 'https://docs.rsshub.app/routes/new-media#matataki', source: '/article/', target: '/matataki/posts/hot' },
-            { title: '最新作品', docs: 'https://docs.rsshub.app/routes/new-media#matataki', source: '/article/latest', target: '/matataki/posts/latest' },
-            { title: '作者创作', docs: 'https://docs.rsshub.app/routes/new-media#matataki', source: '/user/:uid', target: (params) => `/matataki/users/${params.uid}/posts` },
-            { title: 'Fan票关联作品', docs: 'https://docs.rsshub.app/routes/new-media#matataki', source: ['/token/:tokenId', '/token/:tokenId/circle'], target: (params) => `/matataki/tokens/${params.tokenId}/posts` },
-            {
-                title: '标签关联作品',
-                docs: 'https://docs.rsshub.app/routes/new-media#matataki',
-                source: ['/tag/:tagId'],
-                target: (params, url) => {
-                    const tagName = new URL(url).searchParams.get('name');
-                    return `/matataki/tags/${params.tagId}/${tagName}/posts`;
-                },
-            },
-            { title: '收藏夹', docs: 'https://docs.rsshub.app/routes/new-media#matataki', source: '/user/:uid/favlist/:fid', target: (params) => `/matataki/users/${params.uid}/favorites/${params.fid}/posts` },
         ],
     },
     'eventernote.com': { _name: 'Eventernote', www: [{ title: '声优活动及演唱会', docs: 'https://docs.rsshub.app/routes/anime#eventernote', source: '/actors/:name/:id/events', target: '/eventernote/actors/:name/:id' }] },
